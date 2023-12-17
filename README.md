@@ -1,5 +1,9 @@
 # Program-Repair
 
+Project Structure - Bug A/Algo/Repair Models - Change datasets for each repair model to test performance.
+Bug A/Bug Collections/Datasets - Standard Bug Datasets that models are tested upon.
+
+
 With automatic validation, the ability of program repair models in finding and fixing bugs in new projects is zero. 
 
 For example, consider this example bug with BugSwarm Dataset, 
@@ -27,7 +31,18 @@ Another example from RegMiner, (codehaus_jettison/1/ric/src/main/java/org/codeha
 
 However, this requires knowledge from files that use this class to understand that a data variable is missing. These models are not equipped for these.
 
-These models perform better when the fixes are local to a file and have logical binding to function in test. Examples are buggy files in QuixBugs and Defects4J. However, when we have complex project-structured bugs, the models do not perform. 
+These models perform better when the fixes are local to a file and have logical binding to function in test. Examples are buggy files in QuixBugs and Defects4J. 
+
+>def bitcount(n):
+>  count = 0
+>  while n:
+>    n ^= n - 1
+>    count += 1
+>  return count
+
+The fixed version for counting 1-bits is to replace ^ operator with &, that is, n &= n - 1 inside the while loop. These are the kind of bugs the models can perform and repair.
+
+However, when we have complex project-structured bugs, the models do not perform. 
 
 # Why is manual validation giving better numbers?
 
