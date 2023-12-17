@@ -1,0 +1,5 @@
+  void reset() {
+    mappings = Lists.newArrayList();
+    offsetPosition = new Position(0, 0);
+    prefixPosition = new Position(0, 0);
+  }

@@ -1,0 +1,4 @@
+EXIficient/exificient
+2
+com.siemens.ct.exi.datatype.WhiteSpaceTestCase#testSchemaLessComplexContent1
+com.siemens.ct.exi.datatype.WhiteSpaceTestCase#testXmlSpacePreserve2

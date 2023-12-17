@@ -1,0 +1,7 @@
+    public void writeNumber(BigDecimal dec) throws IOException {
+        if (dec == null) {
+            writeNull();
+        } else {
+            _append(JsonToken.VALUE_NUMBER_FLOAT, dec);
+        }
+    }

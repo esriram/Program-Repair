@@ -1,0 +1,41 @@
+  private CanInlineResult canInlineReferenceDirectly(
+      Node callNode, Node fnNode, Set<String> namesToAlias) {
+    if (!isDirectCallNodeReplacementPossible(fnNode)) {
+      return CanInlineResult.NO;
+    }
+
+    // CALL NODE: [ NAME, ARG1, ARG2, ... ]
+    Node cArg = callNode.getFirstChild().getNext();
+
+    // Functions called via 'call' and 'apply' have a this-object as
+    // the first parameter, but this is not part of the called function's
+    // parameter list.
+    if (!callNode.getFirstChild().isName()) {
+      if (NodeUtil.isFunctionObjectCall(callNode)) {
+        // TODO(johnlenz): Support replace this with a value.
+        if (cArg == null || !cArg.isThis()) {
+          return CanInlineResult.NO;
+        }
+        cArg = cArg.getNext();
+      } else {
+        // ".apply" call should be filtered before this.
+        Preconditions.checkState(!NodeUtil.isFunctionObjectApply(callNode));
+      }
+    }
+
+    Map<String, Node> args =
+        FunctionArgumentInjector.getFunctionCallParameterMap(
+            fnNode, callNode, this.throwawayNameSupplier);
+    boolean hasArgs = !args.isEmpty();
+    if (hasArgs) {
+      // Limit the inlining
+      Set<String> allNamesToAlias = Sets.newHashSet(namesToAlias);
+      FunctionArgumentInjector.maybeAddTempsForCallArguments(
+          fnNode, args, allNamesToAlias, compiler.getCodingConvention());
+      if (!allNamesToAlias.isEmpty()) {
+        return CanInlineResult.NO;
+      }
+    }
+
+    return CanInlineResult.YES;
+  }

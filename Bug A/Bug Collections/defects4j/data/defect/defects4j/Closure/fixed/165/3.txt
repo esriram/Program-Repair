@@ -1,0 +1,24 @@
+  RecordType(JSTypeRegistry registry, Map<String, RecordProperty> properties,
+      boolean declared) {
+    super(registry, null, null);
+    setPrettyPrint(true);
+    this.declared = declared;
+
+    for (String property : properties.keySet()) {
+      RecordProperty prop = properties.get(property);
+      if (prop == null) {
+        throw new IllegalStateException(
+            "RecordProperty associated with a property should not be null!");
+      }
+      if (declared) {
+        defineDeclaredProperty(
+            property, prop.getType(), prop.getPropertyNode());
+      } else {
+        defineSynthesizedProperty(
+            property, prop.getType(), prop.getPropertyNode());
+      }
+    }
+
+    // Freeze the record type.
+    isFrozen = true;
+  }

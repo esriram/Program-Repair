@@ -1,0 +1,3 @@
+    static String unescape(String string, boolean strict) {
+        return Parser.unescapeEntities(string, strict);
+    }

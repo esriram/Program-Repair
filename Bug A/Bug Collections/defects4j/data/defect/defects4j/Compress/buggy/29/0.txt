@@ -1,0 +1,42 @@
+    public ArchiveOutputStream createArchiveOutputStream(
+            final String archiverName, final OutputStream out)
+            throws ArchiveException {
+        if (archiverName == null) {
+            throw new IllegalArgumentException("Archivername must not be null.");
+        }
+        if (out == null) {
+            throw new IllegalArgumentException("OutputStream must not be null.");
+        }
+
+        if (AR.equalsIgnoreCase(archiverName)) {
+            return new ArArchiveOutputStream(out);
+        }
+        if (ZIP.equalsIgnoreCase(archiverName)) {
+            ZipArchiveOutputStream zip = new ZipArchiveOutputStream(out);
+            if (entryEncoding != null) {
+                zip.setEncoding(entryEncoding);
+            }
+            return zip;
+        }
+        if (TAR.equalsIgnoreCase(archiverName)) {
+            if (entryEncoding != null) {
+                return new TarArchiveOutputStream(out, entryEncoding);
+            } else {
+                return new TarArchiveOutputStream(out);
+            }
+        }
+        if (JAR.equalsIgnoreCase(archiverName)) {
+                return new JarArchiveOutputStream(out);
+        }
+        if (CPIO.equalsIgnoreCase(archiverName)) {
+            if (entryEncoding != null) {
+                return new CpioArchiveOutputStream(out, entryEncoding);
+            } else {
+                return new CpioArchiveOutputStream(out);
+            }
+        }
+        if (SEVEN_Z.equalsIgnoreCase(archiverName)) {
+            throw new StreamingNotSupportedException(SEVEN_Z);
+        }
+        throw new ArchiveException("Archiver: " + archiverName + " not found.");
+    }

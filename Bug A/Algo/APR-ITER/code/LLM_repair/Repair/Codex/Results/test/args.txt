@@ -1,0 +1,1 @@
+Namespace(dataset='defects4j', chances=1, skip_val=True, folder='Results/test', suffix=False, single_line=True)

@@ -1,0 +1,9 @@
+    public double getL1Distance(double[] v) throws IllegalArgumentException {
+        checkVectorDimensions(v.length);
+        double max = 0;
+        for (int i = 0; i < v.length; i++) {
+            double delta = Math.abs(getEntry(i) - v[i]);
+            max += delta;
+        }
+        return max;
+    }

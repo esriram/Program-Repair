@@ -1,0 +1,19 @@
+--- 
++++ 
+@@ -23,13 +23,9 @@
+             indices[i] = idx;
+         }
+ 
+-        int idx = 1;
+-        while (count < index) {
+-            count += idx;
+-            ++idx;
+-        }
+-        --idx;
+-        indices[last] = idx;
++        int idx = 0;
++        while (count <= index) {
++            count++;            ++idx;        }        --idx;        indices[last] = idx;
+ 
+         return indices;
+     }

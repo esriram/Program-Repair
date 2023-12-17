@@ -1,0 +1,42 @@
+Manifest-Version: 1.0
+Export-Package: org.jgrapht.experimental;uses:="org.jgrapht,org.jgraph
+ t.generate,org.jgrapht.graph";version="0.9.2",org.jgrapht.experimenta
+ l.alg;uses:="org.jgrapht";version="0.9.2",org.jgrapht.experimental.al
+ g.color;uses:="org.jgrapht,org.jgrapht.experimental.alg";version="0.9
+ .2",org.jgrapht.experimental.dag;uses:="org.jgrapht,org.jgrapht.graph
+ ";version="0.9.2",org.jgrapht.graph;uses:="org.jgrapht,org.jgrapht.ev
+ ent,org.jgrapht.graph.builder,org.jgrapht.util";version="0.9.2",org.j
+ grapht.graph.builder;uses:="org.jgrapht,org.jgrapht.graph";version="0
+ .9.2",org.jgrapht.alg;uses:="org.jgrapht,org.jgrapht.alg.interfaces,o
+ rg.jgrapht.event,org.jgrapht.graph,org.jgrapht.util";version="0.9.2",
+ org.jgrapht.alg.cycle;uses:="org.jgrapht";version="0.9.2",org.jgrapht
+ .alg.flow;uses:="org.jgrapht,org.jgrapht.alg.interfaces";version="0.9
+ .2",org.jgrapht.alg.isomorphism;uses:="org.jgrapht";version="0.9.2",o
+ rg.jgrapht.alg.util;uses:="org.jgrapht";version="0.9.2",org.jgrapht.a
+ lg.interfaces;uses:="org.jgrapht,org.jgrapht.graph";version="0.9.2",o
+ rg.jgrapht;uses:="org.jgrapht.event";version="0.9.2",org.jgrapht.trav
+ erse;uses:="org.jgrapht,org.jgrapht.event,org.jgrapht.util";version="
+ 0.9.2",org.jgrapht.event;version="0.9.2",org.jgrapht.util;version="0.
+ 9.2",org.jgrapht.generate;uses:="org.jgrapht";version="0.9.2"
+Built-By: jvs
+Tool: Bnd-3.0.0.201509101326
+Bundle-Name: JGraphT - Core
+Created-By: Apache Maven Bundle Plugin
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+Bundle-Vendor: Barak Naveh, John V. Sichi and contributors (see http:/
+ /sourceforge.net/projects/jgrapht/)
+Build-Jdk: 1.7.0_79
+Bundle-Version: 0.9.2
+Bnd-LastModified: 1459668026996
+Bundle-ManifestVersion: 2
+Bundle-License: http://jgrapht.sourceforge.net/LGPL.html, http://www.e
+ clipse.org/legal/epl-v10.html
+Bundle-Description: A Java class library for graph-theory data structu
+ res and algorithms.
+Bundle-SymbolicName: org.jgrapht.core
+Import-Package: org.jgrapht,org.jgrapht.alg,org.jgrapht.alg.flow,org.j
+ grapht.alg.interfaces,org.jgrapht.alg.util,org.jgrapht.event,org.jgra
+ pht.experimental.alg,org.jgrapht.generate,org.jgrapht.graph,org.jgrap
+ ht.graph.builder,org.jgrapht.traverse,org.jgrapht.util
+Archiver-Version: Plexus Archiver
+

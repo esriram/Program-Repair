@@ -1,0 +1,5 @@
+    public Object asKey(Class<?> rawBase) {
+        // safe to pass _types array without copy since it is not exposed via
+        // any access, nor modified by this class
+        return new AsKey(rawBase, _types, _hashCode);
+    }

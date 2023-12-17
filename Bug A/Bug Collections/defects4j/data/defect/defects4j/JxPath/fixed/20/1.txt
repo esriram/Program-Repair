@@ -1,0 +1,9 @@
+    private boolean containsMatch(Object value, Iterator it) {
+        while (it.hasNext()) {
+            Object element = it.next();
+            if (compute(value, element)) {
+                return true;
+            }
+        }
+        return false;
+    }

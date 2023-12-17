@@ -1,0 +1,10 @@
+    public DocumentType(String name, String publicId, String systemId, String baseUri) {
+        super(baseUri);
+
+        attr(NAME, name);
+        attr(PUBLIC_ID, publicId);
+        if (has(PUBLIC_ID)) {
+            attr(PUB_SYS_KEY, PUBLIC_KEY);
+        }
+        attr(SYSTEM_ID, systemId);
+    }

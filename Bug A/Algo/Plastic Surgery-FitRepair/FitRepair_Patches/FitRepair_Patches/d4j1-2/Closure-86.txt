@@ -1,0 +1,11 @@
+--- 
++++ 
+@@ -22,7 +22,7 @@
+         // TODO(nicksantos): This needs to be changed so that it
+         // returns true iff we're sure the value was never aliased from inside
+         // the constructor (similar to callHasLocalResult)
+-        return true;
++        return isSimpleOperator(value) || isImmutableValue(value);
+       case Token.FUNCTION:
+       case Token.REGEXP:
+       case Token.ARRAYLIT:

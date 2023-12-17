@@ -1,0 +1,3 @@
+    public Iterator<CSVRecord> iterator() {
+        return csvRecordIterator;
+    }

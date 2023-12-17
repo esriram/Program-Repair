@@ -1,0 +1,5 @@
+    public ObjectIdInfo(PropertyName name, Class<?> scope, Class<? extends ObjectIdGenerator<?>> gen,
+            Class<? extends ObjectIdResolver> resolver)
+    {
+        this(name, scope, gen, false, resolver);
+    }

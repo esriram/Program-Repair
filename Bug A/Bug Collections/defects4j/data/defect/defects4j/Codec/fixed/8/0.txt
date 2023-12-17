@@ -1,0 +1,12 @@
+    int readResults(byte[] b, int bPos, int bAvail) {
+        if (buffer != null) {
+            int len = Math.min(avail(), bAvail);
+            System.arraycopy(buffer, readPos, b, bPos, len);
+            readPos += len;
+            if (readPos >= pos) {
+                buffer = null;
+            }
+            return len;
+        }
+        return eof ? -1 : 0;
+    }

@@ -1,0 +1,22 @@
+From 4ca69d240ae5025bdc248d9c654ef453eda0e72b Mon Sep 17 00:00:00 2001
+From: Sarah Komla-Ebri <sarahkeb89@gmail.com>
+Date: Mon, 26 Oct 2015 14:35:30 +0100
+Subject: [PATCH] Fix compilation problem
+
+---
+ obdalib-core/src/main/java/it/unibz/krdb/sql/QuotedID.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/obdalib-core/src/main/java/it/unibz/krdb/sql/QuotedID.java b/obdalib-core/src/main/java/it/unibz/krdb/sql/QuotedID.java
+index 6a0a2fa217f..bdf19778a7b 100644
+--- a/obdalib-core/src/main/java/it/unibz/krdb/sql/QuotedID.java
++++ b/obdalib-core/src/main/java/it/unibz/krdb/sql/QuotedID.java
+@@ -69,7 +69,7 @@ public class QuotedID {
+ 	 * @return
+ 	 */
+ 	
+-	public static QuotedID createFromDatabaseRecord(String s) {
++	public static QuotedID createIdFromDatabaseRecord(String s) {
+ 		// ID is as though it is quoted -- DB stores names as is 
+ 		return new QuotedID(s, QUOTATION);
+ 	}

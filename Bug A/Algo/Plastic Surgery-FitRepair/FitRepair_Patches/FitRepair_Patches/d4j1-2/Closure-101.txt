@@ -1,0 +1,12 @@
+--- 
++++ 
+@@ -24,6 +24,9 @@
+       options.closurePass = true;
+     }
+ 
++ else {
++      options.closurePass = false;
++    }
+     initOptionsFromFlags(options);
+     return options;
+   }

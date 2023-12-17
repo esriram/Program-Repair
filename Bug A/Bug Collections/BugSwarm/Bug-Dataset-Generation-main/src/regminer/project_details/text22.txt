@@ -1,0 +1,8 @@
+Commonjava/partyline
+6
+org.commonjava.util.partyline.JoinableFileManagerConcurrentTest#testConcurrentOps
+org.commonjava.util.partyline.JoinableFileManagerConcurrentTest#testConcurrentOps
+org.commonjava.util.partyline.JoinableFileManagerTest#readLockOnDerivativeSiblingFile_DontPreventMainFileRead
+org.commonjava.util.partyline.JoinableFileManagerTest#readLockOnDerivativeSiblingFile_DontPreventMainFileRead
+org.commonjava.util.partyline.BinaryFileTest#shouldReadBinaryFile
+org.commonjava.util.partyline.BinaryFileTest#shouldReadBinaryFile

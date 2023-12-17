@@ -1,0 +1,6 @@
+tzaeschke/zoodb
+4
+org.zoodb.test.jdo.Test_070_Query#testParsingErrors
+org.zoodb.test.jdo.Test_084_SerailizationBugs#testSerialization
+org.zoodb.test.jdo.Test_083_SerailizationBugs#testSerialization
+org.zoodb.test.jdo.Test_083_SerailizationBugs#testSerialization

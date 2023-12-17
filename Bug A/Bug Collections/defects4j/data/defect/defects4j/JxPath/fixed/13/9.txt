@@ -1,0 +1,7 @@
+    public synchronized NamespaceResolver getNamespaceResolver() {
+        if (localNamespaceResolver == null) {
+            localNamespaceResolver = new NamespaceResolver(super.getNamespaceResolver());
+            localNamespaceResolver.setNamespaceContextPointer(this);
+        }
+        return localNamespaceResolver;
+    }

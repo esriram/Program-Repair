@@ -1,0 +1,3 @@
+lightblueseas/jcommons-lang
+1
+de.alpharogroup.io.SerializedObjectExtensionsTest#testToByteArray

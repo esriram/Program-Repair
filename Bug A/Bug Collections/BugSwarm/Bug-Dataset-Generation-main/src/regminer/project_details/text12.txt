@@ -1,0 +1,3 @@
+devnied/Bit-lib4j
+1
+fr.devnied.bitlib.BytesUtilsTest#testBytesFromString

@@ -1,0 +1,5 @@
+    public void resolve(SerializerProvider provider) throws JsonMappingException
+    {
+        // 05-Sep-2013, tatu: I _think_ this can be considered a primary property...
+        _mapSerializer = (MapSerializer) provider.handlePrimaryContextualization(_mapSerializer, _property);
+    }

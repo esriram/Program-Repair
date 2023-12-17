@@ -1,0 +1,4 @@
+openshift/openshift-restclient-java
+2
+com.openshift.internal.restclient.URLBuilderTest#testBuildingURLForAProjectUsingResource
+com.openshift.internal.restclient.URLBuilderTest#testBuildingURLForAProjectUsingResource

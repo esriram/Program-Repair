@@ -1,0 +1,9 @@
+    public long convertLocalToUTC(long instantLocal, boolean strict, long originalInstantUTC) {
+        int offsetOriginal = getOffset(originalInstantUTC);
+        long instantUTC = instantLocal - offsetOriginal;
+        int offsetLocalFromOriginal = getOffset(instantUTC);
+        if (offsetLocalFromOriginal == offsetOriginal) {
+            return instantUTC;
+        }
+        return convertLocalToUTC(instantLocal, strict);
+    }

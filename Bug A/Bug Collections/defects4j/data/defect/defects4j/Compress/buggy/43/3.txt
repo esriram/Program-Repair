@@ -1,0 +1,9 @@
+    private int versionNeededToExtract(final int zipMethod, final boolean zip64, final boolean usedDataDescriptor) {
+        if (zip64) {
+            return ZIP64_MIN_VERSION;
+        }
+        if (usedDataDescriptor) {
+            return DATA_DESCRIPTOR_MIN_VERSION;
+        }
+        return versionNeededToExtractMethod(zipMethod);
+    }

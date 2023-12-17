@@ -1,0 +1,12 @@
+    public Object clone() {
+        try {
+            NamespaceResolver result = (NamespaceResolver) super.clone();
+            result.sealed = false;
+            return result;
+        }
+        catch (CloneNotSupportedException e) {
+            // Of course, it's supported.
+            e.printStackTrace();
+            return null;
+        }
+    }

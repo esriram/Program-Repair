@@ -1,0 +1,4 @@
+xerial/sqlite-jdbc
+2
+org.sqlite.StatementTest#dateTimeTest
+org.sqlite.PrepStmtTest#preparedStatementShouldThrowIfNotAllParamsSetBatch

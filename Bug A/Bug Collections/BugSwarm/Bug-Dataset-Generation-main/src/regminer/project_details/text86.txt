@@ -1,0 +1,4 @@
+antlr/stringtemplate4
+2
+org.stringtemplate.v4.test.TestModelAdaptors#testHandlesKeysNotComparableToString
+org.stringtemplate.v4.test.TestModelAdaptors#testHandlesKeysNotComparableToString

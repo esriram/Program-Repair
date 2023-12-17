@@ -1,0 +1,7 @@
+    public void writeString(String text) throws IOException {
+        if (text == null) {
+            writeNull();
+        } else {
+            _appendValue(JsonToken.VALUE_STRING, text);
+        }
+    }

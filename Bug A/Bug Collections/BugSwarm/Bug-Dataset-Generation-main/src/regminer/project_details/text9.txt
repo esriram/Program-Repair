@@ -1,0 +1,15 @@
+brettwooldridge/HikariCP
+13
+com.zaxxer.hikari.datasource.TestSealedConfig#testSealedAccessibleMethods
+com.zaxxer.hikari.pool.TestMetrics#testFakeMetricRegistryThrowsIllegalArgumentException
+com.zaxxer.hikari.TestConnections#testInvalidConnectionTestQuery
+com.zaxxer.hikari.ShutdownTest#testAfterShutdown
+com.zaxxer.hikari.ShutdownTest#testAfterShutdown
+com.zaxxer.hikari.TestValidation#validateBadDriver
+com.zaxxer.hikari.TestConnectionTimeoutRetry#testConnectionIdleFill
+com.zaxxer.hikari.TestConnectionCloseBlocking#testConnectionCloseBlocking
+com.zaxxer.hikari.TestValidation#validateInvalidLeakDetection
+com.zaxxer.hikari.ConnectionStateTest#testReadOnly
+com.zaxxer.hikari.ExceptionTest#testException1
+com.zaxxer.hikari.TestConnectionTimeoutRetry#testConnectionIdleFill
+com.zaxxer.hikari.TestPropertySetter#testPropertyUpperCase

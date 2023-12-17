@@ -1,0 +1,4 @@
+    public Iterator iterator()
+    {
+        return hashcodeMap.values().iterator();
+    }

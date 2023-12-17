@@ -1,0 +1,3 @@
+jboss-javassist/javassist
+1
+test.javassist.proxy.ProxySimpleTest#testJIRA244

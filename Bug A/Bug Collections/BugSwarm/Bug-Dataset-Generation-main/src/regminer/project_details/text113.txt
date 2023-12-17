@@ -1,0 +1,4 @@
+salesforce/storm-dynamic-spout
+2
+com.salesforce.storm.spout.sideline.kafka.SidelineConsumerConfigTest#testForSaneDefaultKafkaConsumerSettings
+com.salesforce.storm.spout.sideline.kafka.SidelineConsumerTest#testConsumerWithInitialStateToSkipMessages

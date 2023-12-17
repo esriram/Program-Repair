@@ -1,0 +1,33 @@
+    protected MappingIterator(JavaType type, JsonParser p, DeserializationContext ctxt,
+            JsonDeserializer<?> deser,
+            boolean managedParser, Object valueToUpdate)
+    {
+        _type = type;
+        _parser = p;
+        _context = ctxt;
+        _deserializer = (JsonDeserializer<T>) deser;
+        _closeParser = managedParser;
+        if (valueToUpdate == null) {
+            _updatedValue = null;
+        } else {
+            _updatedValue = (T) valueToUpdate;
+        }
+
+        /* Ok: one more thing; we may have to skip START_ARRAY, assuming
+         * "wrapped" sequence; but this is ONLY done for 'managed' parsers
+         * and never if JsonParser was directly passed by caller (if it
+         * was, caller must have either positioned it over first token of
+         * the first element, or cleared the START_ARRAY token explicitly).
+         * Note, however, that we do not try to guess whether this could be
+         * an unwrapped sequence of arrays/Lists: we just assume it is wrapped;
+         * and if not, caller needs to hand us JsonParser instead, pointing to
+         * the first token of the first element.
+         */
+        if (managedParser && (p != null) && p.isExpectedStartArrayToken()) {
+                // If pointing to START_ARRAY, context should be that ARRAY
+                p.clearCurrentToken();
+                // regardless, recovery context should be whatever context we have now,
+                // with sole exception of pointing to a start marker, in which case it's
+                // the parent
+        }
+    }

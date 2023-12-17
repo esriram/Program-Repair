@@ -1,0 +1,6 @@
+    public static String exceptionMessage(Throwable t) {
+        if (t instanceof JsonProcessingException) {
+            return ((JsonProcessingException) t).getOriginalMessage();
+        }
+        return t.getMessage();
+    }

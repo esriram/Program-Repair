@@ -1,0 +1,3 @@
+basho/riak-java-client
+1
+com.basho.riak.client.jiak.TestJiakObject#value_never_null

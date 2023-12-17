@@ -1,0 +1,3 @@
+haku/dlnatoad
+1
+com.vaguehope.dlnatoad.util.WatcherTest#itFindsNewDirAndThenANewFileViaWatcher

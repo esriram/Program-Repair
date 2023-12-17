@@ -1,0 +1,3 @@
+scijava/scijava-common
+1
+org.scijava.util.TypesTest#testIsAssignableT

@@ -1,0 +1,5 @@
+brianm/config-magic
+3
+org.skife.config.TestEnums#testAbstractClassDefaultNull
+org.skife.config.TestCoercion#testNullDouble
+org.skife.config.TestCoercion#testEmptyURI

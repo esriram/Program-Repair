@@ -1,0 +1,60 @@
+  private void updateObjLitOrFunctionDeclarationAtAssignNode(
+      Name n, String alias) {
+    // NOTE: It's important that we don't add additional nodes
+    // (e.g. a var node before the exprstmt) because the exprstmt might be
+    // the child of an if statement that's not inside a block).
+
+    Ref ref = n.declaration;
+    Node rvalue = ref.node.getNext();
+    Node varNode = new Node(Token.VAR);
+    Node varParent = ref.node.getAncestor(3);
+    Node gramps = ref.node.getAncestor(2);
+    boolean isObjLit = rvalue.getType() == Token.OBJECTLIT;
+    boolean insertedVarNode = false;
+
+    if (isObjLit && n.canEliminate()) {
+      // Eliminate the object literal altogether.
+      varParent.replaceChild(gramps, varNode);
+      ref.node = null;
+      insertedVarNode = true;
+
+    } else if (!n.isSimpleName()) {
+      // Create a VAR node to declare the name.
+      if (rvalue.getType() == Token.FUNCTION) {
+        checkForHosedThisReferences(rvalue, n.docInfo, n);
+      }
+
+      ref.node.getParent().removeChild(rvalue);
+
+      Node nameNode = NodeUtil.newName(
+          compiler.getCodingConvention(),
+          alias, ref.node.getAncestor(2), n.fullName());
+
+      if (ref.node.getLastChild().getBooleanProp(Node.IS_CONSTANT_NAME)) {
+        nameNode.putBooleanProp(Node.IS_CONSTANT_NAME, true);
+      }
+
+      varNode.addChildToBack(nameNode);
+      nameNode.addChildToFront(rvalue);
+      varParent.replaceChild(gramps, varNode);
+
+      // Update the node ancestry stored in the reference.
+      ref.node = nameNode;
+      insertedVarNode = true;
+    }
+
+    if (isObjLit) {
+        declareVarsForObjLitValues(
+            n, alias, rvalue,
+            varNode, varParent.getChildBefore(varNode), varParent);
+
+    }
+      addStubsForUndeclaredProperties(n, alias, varParent, varNode);
+
+    if (insertedVarNode) {
+      if (!varNode.hasChildren()) {
+        varParent.removeChild(varNode);
+      }
+      compiler.reportCodeChange();
+    }
+  }

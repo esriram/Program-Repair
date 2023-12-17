@@ -1,0 +1,1 @@
+    public final boolean isJavaLangObject() { return _class == Object.class; }

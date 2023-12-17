@@ -1,0 +1,6 @@
+neuland/jade4j
+4
+de.neuland.jade4j.compiler.CompilerTest#blockQuote
+de.neuland.jade4j.compiler.CompilerTest#blockQuote
+de.neuland.jade4j.compiler.CompilerTest#mixin_with_conditional
+de.neuland.jade4j.template.JadeRunFullTemplateTest#testFullRunForMixinWithConditional

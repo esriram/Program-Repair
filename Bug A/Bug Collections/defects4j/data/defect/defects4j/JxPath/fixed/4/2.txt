@@ -1,0 +1,7 @@
+    public Object getValue() {
+        if (node.getNodeType() == Node.COMMENT_NODE) {
+            String text = ((Comment) node).getData();
+            return text == null ? "" : text.trim();
+        }
+        return stringValue(node);
+    }

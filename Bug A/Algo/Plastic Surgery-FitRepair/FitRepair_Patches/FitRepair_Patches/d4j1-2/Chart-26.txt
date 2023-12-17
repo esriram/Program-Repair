@@ -1,0 +1,12 @@
+--- 
++++ 
+@@ -18,6 +18,9 @@
+         }
+         if (plotState != null && hotspot != null) {
+             ChartRenderingInfo owner = plotState.getOwner();
++                if (owner == null) {
++                    return state;
++                }
+                 EntityCollection entities = owner.getEntityCollection();
+                 if (entities != null) {
+                     entities.add(new AxisLabelEntity(this, hotspot, 

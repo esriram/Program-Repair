@@ -1,0 +1,4 @@
+  @Override public JsonWriter value(boolean value) throws IOException {
+    put(new JsonPrimitive(value));
+    return this;
+  }

@@ -1,0 +1,3 @@
+spring-projects/spring-data-cassandra
+1
+org.springframework.data.cassandra.core.CassandraBatchTemplateIntegrationTests#insertAsVarargsShouldRejectQueryOptions

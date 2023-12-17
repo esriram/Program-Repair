@@ -1,0 +1,3 @@
+    public void write(JsonWriter out, Boolean value) throws IOException {
+      out.value(value);
+    }

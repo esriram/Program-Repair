@@ -1,0 +1,3 @@
+    public String normalName() {
+        return tag.normalName();
+    }

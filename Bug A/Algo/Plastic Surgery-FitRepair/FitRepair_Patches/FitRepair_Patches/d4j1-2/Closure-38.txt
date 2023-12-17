@@ -1,0 +1,10 @@
+--- 
++++ 
+@@ -24,7 +24,7 @@
+     // x--4 (which is a syntax error).
+     char prev = getLastChar();
+     boolean negativeZero = isNegativeZero(x);
+-    if (x < 0 && prev == '-') {
++    if (x < 0 && prev == '-' || isNegativeZero(x) && prev == '-') {
+       add(" ");
+     }

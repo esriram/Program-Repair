@@ -1,0 +1,5 @@
+    public static Document parseBodyFragmentRelaxed(String bodyHtml, String baseUri) {
+        Parser parser = new Parser(bodyHtml, baseUri, true);
+        parser.relaxed = true;
+        return parser.parse();
+    }

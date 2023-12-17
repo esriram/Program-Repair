@@ -1,0 +1,9 @@
+marschall/memoryfilesystem
+7
+com.github.marschall.memoryfilesystem.PosixMemoryFileSystemTest#getOwner
+com.github.marschall.memoryfilesystem.MemoryFileSystemTest#copySymbolicLinkReplace
+com.github.marschall.memoryfilesystem.MemoryFileSystemTest#isSameFileNotExisting
+com.github.marschall.memoryfilesystem.MemoryFileSystemTest#moveNonEmptyFolder
+com.github.marschall.memoryfilesystem.WindowsMemoryFileSystemTest#testPathMatherGlob
+com.github.marschall.memoryfilesystem.MemoryFileSystemTest#renameFile
+com.github.marschall.memoryfilesystem.CustomMemoryFileSystemTest#regressionIssue46

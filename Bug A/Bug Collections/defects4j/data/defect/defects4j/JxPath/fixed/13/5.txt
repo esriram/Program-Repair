@@ -1,0 +1,13 @@
+    protected synchronized String getExternallyRegisteredPrefix(String namespaceURI) {
+        if (reverseMap == null) {
+            reverseMap = new HashMap();
+            Iterator it = namespaceMap.entrySet().iterator();
+            while (it.hasNext()) {
+                Map.Entry entry = (Map.Entry) it.next();
+                reverseMap.put(entry.getValue(), entry.getKey());
+            }
+        }
+        String prefix = (String) reverseMap.get(namespaceURI);
+        return prefix == null && parent != null ? parent
+                .getExternallyRegisteredPrefix(namespaceURI) : prefix;
+    }

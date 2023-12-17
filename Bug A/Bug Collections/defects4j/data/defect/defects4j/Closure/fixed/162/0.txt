@@ -1,0 +1,3 @@
+  Iterable<Var> getVarIterable() {
+    return vars.values();
+  }

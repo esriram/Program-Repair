@@ -1,0 +1,11 @@
+    public static FileInputStream openFile(String str) throws ParseException
+    {
+        try
+        {
+            return new FileInputStream(str);
+        }
+        catch (FileNotFoundException e)
+        {
+            throw new ParseException("Unable to find file: " + str);
+        }
+    }

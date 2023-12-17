@@ -1,0 +1,8 @@
+graphaware/neo4j-nlp
+6
+com.graphaware.nlp.dsl.Word2VecProcedureTest#testListModels
+com.graphaware.nlp.dsl.TextRankProcedureTest#testTextRankPostProcess
+com.graphaware.nlp.dsl.EnrichConceptProcedureTest#testNonRegisteredEnricherThrowsException
+com.graphaware.nlp.dsl.EnrichConceptProcedureTest#testNonRegisteredEnricherThrowsException
+com.graphaware.nlp.dsl.TextProcessorsProcedureTest#testGetPipelineInfosWorksWithAndWithoutAPipelineNameParameter
+com.graphaware.nlp.ml.textrank.TextRankTest#testTextRank

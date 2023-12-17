@@ -1,0 +1,10 @@
+--- 
++++ 
+@@ -35,6 +35,7 @@
+             else if (stopAtNonOption)
+             {
+                 process(token.substring(i));
++          return;
+             }
+             else
+             {

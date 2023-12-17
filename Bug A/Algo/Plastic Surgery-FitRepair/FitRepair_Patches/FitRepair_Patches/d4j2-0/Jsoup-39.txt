@@ -1,0 +1,10 @@
+--- 
++++ 
+@@ -15,6 +15,7 @@
+             docData = Charset.forName(defaultCharset).decode(byteData).toString();
+             docData = docData.substring(1);
+             charsetName = defaultCharset;
++            doc = null; // without byte data passed to parser
+         }
+         if (doc == null) {
+             doc = parser.parseInput(docData, baseUri);

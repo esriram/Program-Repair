@@ -1,0 +1,24 @@
+    public void visit(Mapping m, int line, int col, int nextLine, int nextCol)
+      throws IOException {
+
+      int id = (m != null) ? m.id : UNMAPPED;
+      if (lastId != id) {
+        // Prevent the creation of unnecessary temporary stings for often
+        // repeated values.
+        lastIdString = (id == UNMAPPED) ? UNMAPPED_STRING : String.valueOf(id);
+        lastId = id;
+      }
+      String idString = lastIdString;
+
+      for (int i = line; i <= nextLine; i++) {
+        if (i == nextLine) {
+          for (int j = col; j < nextCol; j++) {
+            addCharEntry(idString);
+          }
+          break;
+        }
+
+        closeLine();
+        openLine();
+      }
+    }

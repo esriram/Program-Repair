@@ -1,0 +1,16 @@
+sboesebeck/morphium
+14
+de.caluga.test.mongo.suite.ObjectMapperImplTest#setTest
+de.caluga.test.mongo.suite.InMemMessagingTest#answerExclusiveMessagesTest
+de.caluga.test.mongo.suite.InMemMessagingTest#answerExclusiveMessagesTest
+de.caluga.test.mongo.suite.InMemMessagingTest#waitForAnswerTest
+de.caluga.test.mongo.suite.InMemMessagingTest#answerExclusiveMessagesTest
+de.caluga.test.mongo.suite.InMemMessagingTest#answerExclusiveMessagesTest
+de.caluga.test.mongo.suite.MessagingTest#waitForAnswerTest
+de.caluga.test.mongo.suite.MessagingTest#waitForAnswerTest
+de.caluga.test.mongo.suite.ObjectMapperTest#listValueTest
+de.caluga.test.mongo.suite.ListTests#nullValueListTest
+de.caluga.test.mongo.suite.ListTests#nullValueListTest
+de.caluga.test.mongo.suite.LastAccessTest#createdTest
+de.caluga.test.mongo.suite.LastAccessTest#createdTest
+de.caluga.test.mongo.suite.IdCacheTest#idTest

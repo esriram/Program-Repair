@@ -1,0 +1,2 @@
+    void visit(Mapping m, int line, int col, int endLine, int endCol)
+        throws IOException;

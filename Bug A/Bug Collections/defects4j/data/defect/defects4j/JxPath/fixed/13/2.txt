@@ -1,0 +1,6 @@
+     protected synchronized String getExternallyRegisteredNamespaceURI(
+            String prefix) {
+        String uri = (String) namespaceMap.get(prefix);
+        return uri == null && parent != null ? parent
+                .getExternallyRegisteredNamespaceURI(prefix) : uri;
+    }

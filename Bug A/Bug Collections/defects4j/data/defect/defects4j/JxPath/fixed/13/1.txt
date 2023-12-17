@@ -1,0 +1,5 @@
+    public synchronized String getNamespaceURI(String prefix) {
+        String uri = getExternallyRegisteredNamespaceURI(prefix);
+        return uri == null && pointer != null ? pointer.getNamespaceURI(prefix)
+                : uri;
+    }

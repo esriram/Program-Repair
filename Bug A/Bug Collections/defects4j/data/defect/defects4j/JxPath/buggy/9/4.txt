@@ -1,0 +1,3 @@
+    public CoreOperationEqual(Expression arg1, Expression arg2) {
+        super(arg1, arg2);
+    }

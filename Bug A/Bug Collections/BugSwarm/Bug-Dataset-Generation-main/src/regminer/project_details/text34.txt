@@ -1,0 +1,4 @@
+GoogleCloudPlatform/app-maven-plugin
+2
+com.google.cloud.tools.maven.DeployMojoTest#testDeploySpecifiedAppYaml
+com.google.cloud.tools.maven.DeployMojoTest#testDeploySpecifiedAppYaml

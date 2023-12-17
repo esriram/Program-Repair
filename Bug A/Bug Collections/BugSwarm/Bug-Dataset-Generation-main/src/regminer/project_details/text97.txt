@@ -1,0 +1,3 @@
+codelibs/jcifs
+1
+jcifs.tests.NtlmTest#testParsingType3

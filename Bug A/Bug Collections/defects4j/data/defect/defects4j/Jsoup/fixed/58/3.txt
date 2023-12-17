@@ -1,0 +1,8 @@
+    public boolean isValid(Document dirtyDocument) {
+        Validate.notNull(dirtyDocument);
+
+        Document clean = Document.createShell(dirtyDocument.baseUri());
+        int numDiscarded = copySafeNodes(dirtyDocument.body(), clean.body());
+        return numDiscarded == 0
+            && dirtyDocument.head().childNodes().size() == 0; // because we only look at the body, but we start from a shell, make sure there's nothing in the head
+    }

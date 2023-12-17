@@ -1,0 +1,4 @@
+ktuukkan/marine-api
+2
+net.sf.marineapi.ais.parser.AISMessageParserTest#testAppendInvalidIndex
+net.sf.marineapi.nmea.parser.SentenceValidatorTest#testIsValid

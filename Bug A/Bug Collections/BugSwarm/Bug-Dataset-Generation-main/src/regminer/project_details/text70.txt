@@ -1,0 +1,4 @@
+cantaloupe-project/cantaloupe
+2
+edu.illinois.library.cantaloupe.resource.iiif.v1.Version1_1ConformanceTest#testFormatInAcceptHeader
+edu.illinois.library.cantaloupe.processor.ImageIoImageReaderTest#testSupportedFormats

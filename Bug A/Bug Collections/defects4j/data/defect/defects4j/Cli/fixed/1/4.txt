@@ -1,0 +1,11 @@
+    public String[] getOptionValues(String opt)
+    {
+        Option key = resolveOption( opt );
+
+        if (options.contains(key))
+        {
+            return key.getValues();
+        }
+
+        return null;
+        }

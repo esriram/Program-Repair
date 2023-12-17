@@ -1,0 +1,5 @@
+    public boolean isLanguage(String lang) {
+        String current = getLanguage();
+        return current == null ? super.isLanguage(lang)
+                : current.toUpperCase().startsWith(lang.toUpperCase());
+    }

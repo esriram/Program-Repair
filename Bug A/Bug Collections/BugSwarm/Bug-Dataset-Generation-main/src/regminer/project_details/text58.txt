@@ -1,0 +1,3 @@
+serba/jmxterm
+1
+org.cyclopsgroup.jmxterm.cmd.BeanCommandTest#testExecuteWithGettingSomething

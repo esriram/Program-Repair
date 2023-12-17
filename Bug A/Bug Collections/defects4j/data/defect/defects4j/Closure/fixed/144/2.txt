@@ -1,0 +1,31 @@
+  FunctionTypeBuilder inferReturnStatements(@Nullable Node functionBlock) {
+    if (functionBlock == null || compiler.getInput(sourceName).isExtern()) {
+      return this;
+    }
+    Preconditions.checkArgument(functionBlock.getType() == Token.BLOCK);
+    if (returnType == null) {
+      boolean hasNonEmptyReturns = false;
+      List<Node> worklist = Lists.newArrayList(functionBlock);
+      while (!worklist.isEmpty()) {
+        Node current = worklist.remove(worklist.size() - 1);
+        int cType = current.getType();
+        if (cType == Token.RETURN && current.getFirstChild() != null ||
+            cType == Token.THROW) {
+          hasNonEmptyReturns = true;
+          break;
+        } else if (NodeUtil.isStatementBlock(current) ||
+            NodeUtil.isControlStructure(current)) {
+          for (Node child = current.getFirstChild();
+               child != null; child = child.getNext()) {
+            worklist.add(child);
+          }
+        }
+      }
+
+      if (!hasNonEmptyReturns) {
+        returnType = typeRegistry.getNativeType(VOID_TYPE);
+        returnTypeInferred = true;
+      }
+    }
+    return this;
+  }

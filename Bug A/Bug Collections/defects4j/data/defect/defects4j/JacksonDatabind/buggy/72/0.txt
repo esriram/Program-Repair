@@ -1,0 +1,1 @@
+    public int getPropertyIndex() { return _delegate.getPropertyIndex(); }

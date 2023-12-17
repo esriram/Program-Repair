@@ -1,0 +1,4 @@
+tntim96/JSCover
+2
+jscover.instrument.InstrumenterTest#shouldInstrumentLoopWithContinueLabel
+jscover.util.LogFormatterTest#shouldFormatLogRecordWithParameters

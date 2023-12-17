@@ -1,0 +1,4 @@
+w3c/epubcheck
+2
+com.adobe.epubcheck.api.Epub30CheckExpandedTest#testIssue922
+com.adobe.epubcheck.api.Epub20CheckTest#testValidateEPUBvalid20WithProfile

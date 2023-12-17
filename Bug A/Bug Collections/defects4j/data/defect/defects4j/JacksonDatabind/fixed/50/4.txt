@@ -1,0 +1,10 @@
+    private BeanReferring handleUnresolvedReference(JsonParser p,
+            SettableBeanProperty prop, PropertyValueBuffer buffer,
+            UnresolvedForwardReference reference)
+        throws JsonMappingException
+    {
+        BeanReferring referring = new BeanReferring(reference, prop.getType().getRawClass(),
+                buffer, prop);
+        reference.getRoid().appendReferring(referring);
+        return referring;
+    }

@@ -1,0 +1,5 @@
+    public void close() throws IOException {
+            if (_parser != null) {
+                _parser.close();
+            }
+    }

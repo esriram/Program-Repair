@@ -1,0 +1,6 @@
+  public JsonWriter value(long value) throws IOException {
+    writeDeferredName();
+    beforeValue();
+    out.write(Long.toString(value));
+    return this;
+  }

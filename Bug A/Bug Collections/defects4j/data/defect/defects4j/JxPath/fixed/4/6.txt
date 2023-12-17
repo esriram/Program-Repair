@@ -1,0 +1,9 @@
+    private AbstractFactory getAbstractFactory(JXPathContext context) {
+        AbstractFactory factory = context.getFactory();
+        if (factory == null) {
+            throw new JXPathException(
+                "Factory is not set on the JXPathContext - cannot create path: "
+                    + asPath());
+        }
+        return factory;
+    }

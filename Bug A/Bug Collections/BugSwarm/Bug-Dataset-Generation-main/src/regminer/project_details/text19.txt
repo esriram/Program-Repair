@@ -1,0 +1,3 @@
+EsotericSoftware/reflectasm
+1
+com.esotericsoftware.reflectasm.ConstructorAccessTest#testPackagePrivateNewInstance

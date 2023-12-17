@@ -1,0 +1,4 @@
+rickfast/consul-client
+2
+com.orbitz.consul.model.catalog.TaggedAddressesTest#buildingTaggedAddressWithoutLanAddressShouldSucceed
+com.orbitz.consul.model.catalog.TaggedAddressesTest#buildingTaggedAddressWithoutLanAddressShouldSucceed

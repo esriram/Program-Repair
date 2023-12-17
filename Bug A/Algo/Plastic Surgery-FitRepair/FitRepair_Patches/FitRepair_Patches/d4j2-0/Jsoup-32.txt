@@ -1,0 +1,11 @@
+--- 
++++ 
+@@ -54,7 +54,7 @@
+     @Override
+     public Element clone() {
+         Element clone = (Element) super.clone();
+-        clone.classNames();
++        clone.classNames = null;
+         return clone;
+     }
+ }

@@ -1,0 +1,4 @@
+damianszczepanik/cucumber-reporting
+2
+net.masterthought.cucumber.generators.FeatureReportPageTest#prepareReport_AddsCustomProperties
+net.masterthought.cucumber.JsChartUtilTest#testGetTags_withoutTags

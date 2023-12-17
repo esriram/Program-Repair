@@ -1,0 +1,3 @@
+        public Phoneme mergeWithLanguage(final LanguageSet lang) {
+          return new Phoneme(this.phonemeText.toString(), this.languages.merge(lang));
+        }

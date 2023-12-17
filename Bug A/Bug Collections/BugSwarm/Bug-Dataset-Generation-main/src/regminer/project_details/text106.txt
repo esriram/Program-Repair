@@ -1,0 +1,8 @@
+DiUS/java-faker
+6
+com.github.javafaker.FakerTest#numberBetweenRepeated
+com.github.javafaker.NumberTest#testLongBetweenOneAndThree
+com.github.javafaker.NumberTest#testLongBetweenOneAndThree
+com.github.javafaker.NumberTest#testNumberBetweenOneAndThree
+com.github.javafaker.FakerTest#regexifyShouldGenerateSameValueForFakerWithSameSeed
+com.github.javafaker.AddressTest#testStreetAddressIsANumber

@@ -1,0 +1,5 @@
+    public Object setAndReturn(Object instance, Object value) throws IOException
+    {
+        set(instance, value);
+        return instance;
+    }

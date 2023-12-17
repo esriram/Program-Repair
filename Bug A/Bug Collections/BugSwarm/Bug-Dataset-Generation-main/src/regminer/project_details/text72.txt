@@ -1,0 +1,3 @@
+spring-projects/spring-data-elasticsearch
+1
+org.springframework.data.elasticsearch.repository.support.simple.SimpleElasticsearchRepositoryTests#shouldNotReturnNullValuesInFindAllById

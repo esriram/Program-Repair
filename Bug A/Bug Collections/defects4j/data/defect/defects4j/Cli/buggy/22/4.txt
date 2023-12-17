@@ -1,0 +1,10 @@
+    private void processOptionToken(String token, boolean stopAtNonOption)
+    {
+        if (stopAtNonOption && !options.hasOption(token))
+        {
+            eatTheRest = true;
+        }
+
+
+        tokens.add(token);
+    }

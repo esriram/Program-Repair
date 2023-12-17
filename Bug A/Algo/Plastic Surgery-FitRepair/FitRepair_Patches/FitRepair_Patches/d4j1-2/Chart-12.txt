@@ -1,0 +1,11 @@
+--- 
++++ 
+@@ -27,7 +27,7 @@
+      */
+     public MultiplePiePlot(CategoryDataset dataset) {
+         super();
+-        this.dataset = dataset;
++this.setDataset(dataset);
+         PiePlot piePlot = new PiePlot(null);
+         this.pieChart = new JFreeChart(piePlot);
+         this.pieChart.removeLegend();

@@ -1,0 +1,50 @@
+    public String getNamespaceURI(String prefix) {
+        if (prefix == null || prefix.equals("")) {
+            return getDefaultNamespaceURI();
+        }
+
+        if (prefix.equals("xml")) {
+            return XML_NAMESPACE_URI;
+        }
+
+        if (prefix.equals("xmlns")) {
+            return XMLNS_NAMESPACE_URI;
+        }
+
+        String namespace = null;
+        if (namespaces == null) {
+            namespaces = new HashMap();
+        }
+        else {
+            namespace = (String) namespaces.get(prefix);
+        }
+
+        if (namespace == null) {
+            String qname = "xmlns:" + prefix;
+            Node aNode = node;
+            if (aNode instanceof Document) {
+                aNode = ((Document)aNode).getDocumentElement();
+            }
+            while (aNode != null) {
+                if (aNode.getNodeType() == Node.ELEMENT_NODE) {
+                    Attr attr = ((Element) aNode).getAttributeNode(qname);
+                    if (attr != null) {
+                        namespace = attr.getValue();
+                        break;
+                    }
+                }
+                aNode = aNode.getParentNode();
+            }
+            if (namespace == null || namespace.equals("")) {
+                namespace = NodePointer.UNKNOWN_NAMESPACE;
+            }
+        }
+
+        namespaces.put(prefix, namespace);
+        if (namespace == UNKNOWN_NAMESPACE) {
+            return null;
+        }
+        
+        // TBD: We are supposed to resolve relative URIs to absolute ones.
+        return namespace;
+    }

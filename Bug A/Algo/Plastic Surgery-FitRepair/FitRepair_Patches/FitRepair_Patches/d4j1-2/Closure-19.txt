@@ -1,0 +1,10 @@
+--- 
++++ 
+@@ -24,6 +24,7 @@
+         scope.inferQualifiedSlot(node, qualifiedName, origType, type);
+         break;
+ 
++      case Token.THIS:  break;  // This is a kind of anonymous object literal.
+         // "this" references aren't currently modeled in the CFG.
+ 
+       default:

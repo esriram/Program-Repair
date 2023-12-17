@@ -1,0 +1,4 @@
+        public <T> T newInstance(Class<T> c) throws Exception {
+          assertInstantiable(c);
+          return (T) newInstance.invoke(null, c, constructorId);
+        }

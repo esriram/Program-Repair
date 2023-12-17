@@ -1,0 +1,11 @@
+--- 
++++ 
+@@ -20,7 +20,7 @@
+                 }
+ 
+                 double sumWts = 0;
+-                for (int i = 0; i < weights.length; i++) {
++for (int i = begin; i < begin + length; i += 1) {
+                     sumWts += weights[i];
+                 }
+ 

@@ -1,0 +1,10 @@
+  private String getOutputCharset() throws FlagUsageException {
+    if (!config.charset.isEmpty()) {
+      if (!Charset.isSupported(config.charset)) {
+        throw new FlagUsageException(config.charset +
+            " is not a valid charset name.");
+      }
+      return config.charset;
+    }
+    return "US-ASCII";
+  }

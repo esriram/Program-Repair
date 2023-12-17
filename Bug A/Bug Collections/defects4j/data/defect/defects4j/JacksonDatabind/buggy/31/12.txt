@@ -1,0 +1,12 @@
+    protected final void _appendRaw(int rawType, Object value)
+    {
+        Segment next = _hasNativeId
+                ? _last.appendRaw(_appendAt, rawType, value, _objectId, _typeId)
+                : _last.appendRaw(_appendAt, rawType, value);
+        if (next == null) {
+            ++_appendAt;
+        } else {
+            _last = next;
+            _appendAt = 1;
+        }
+    }

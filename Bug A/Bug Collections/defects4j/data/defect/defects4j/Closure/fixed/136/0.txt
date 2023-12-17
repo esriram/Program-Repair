@@ -1,0 +1,8 @@
+  private void addPossibleSignature(String name, Node node, NodeTraversal t) {
+    if (node.getType() == Token.FUNCTION) {
+      // The node we're looking at is a function, so we can add it directly
+      addSignature(name, node, t.getSourceName());
+    } else {
+      nonMethodProperties.add(name);
+    }
+  }

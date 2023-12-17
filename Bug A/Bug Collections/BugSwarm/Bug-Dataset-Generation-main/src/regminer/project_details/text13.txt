@@ -1,0 +1,4 @@
+josephw/futoshiki
+2
+org.kafsemo.futoshiki.TestPossibilities#ruleEliminationsSucceedEvenWhenPuzzleCannotBeSolved
+org.kafsemo.futoshiki.TestFutoshiki#rulesAddedToCloneAreImmediatelyReturned

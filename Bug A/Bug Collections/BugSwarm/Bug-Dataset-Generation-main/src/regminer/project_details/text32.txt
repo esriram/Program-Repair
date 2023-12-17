@@ -1,0 +1,5 @@
+redis/jedis
+3
+redis.clients.jedis.tests.TupleTest#testSameElement
+redis.clients.jedis.tests.TupleTest#testSameElement
+redis.clients.jedis.tests.TupleTest#testSameElement

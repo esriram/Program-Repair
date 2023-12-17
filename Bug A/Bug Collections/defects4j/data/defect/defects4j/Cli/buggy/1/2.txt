@@ -1,0 +1,4 @@
+    public boolean hasOption(String opt)
+    {
+        return options.containsKey(opt);
+    }

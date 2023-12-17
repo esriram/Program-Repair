@@ -1,0 +1,8 @@
+classgraph/classgraph
+6
+io.github.classgraph.issues.issue352.Issue352#test
+io.github.classgraph.issues.issue267.ClassLoadingWorksWithParentLastLoadersStub#sameClassLoaderThatFoundAClassShouldLoadIt
+io.github.classgraph.issues.issue286.Issue286Test#issue286Test
+io.github.lukehutch.fastclasspathscanner.test.FastClasspathScannerTest#scanWithWhitelist
+io.github.lukehutch.fastclasspathscanner.test.FastClasspathScannerTest#scanStaticFinalFieldName
+io.github.lukehutch.fastclasspathscanner.FastClasspathScannerTest#scanTransitiveImplements

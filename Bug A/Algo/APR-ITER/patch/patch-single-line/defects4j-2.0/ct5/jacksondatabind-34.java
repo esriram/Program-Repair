@@ -1,0 +1,11 @@
+--- 
++++ 
+@@ -5,7 +5,7 @@
+     } else {
+         Class<?> h = handledType();
+         if (h == BigDecimal.class) {
+-            visitFloatFormat(visitor, typeHint, JsonParser.NumberType.BIG_INTEGER);
++visitIntFormat(visitor, typeHint, JsonParser.NumberType.BIG_DECIMAL);return;//.;"visitIntFormat" ) ; //} // if(visitor.visitIntFormat(visitor,) ;}
+         } else {
+             // otherwise bit unclear what to call... but let's try:
+             /*JsonNumberFormatVisitor v2 =*/ visitor.expectNumberFormat(typeHint);

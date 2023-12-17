@@ -1,0 +1,15 @@
+    String unescapeEntities(boolean inAttribute) {
+        StringBuilder builder = new StringBuilder();
+        while (!reader.isEmpty()) {
+            builder.append(reader.consumeTo('&'));
+            if (reader.matches('&')) {
+                reader.consume();
+                Character c = consumeCharacterReference(null, inAttribute);
+                if (c == null)
+                    builder.append('&');
+                else
+                    builder.append(c);
+            }
+        }
+        return builder.toString();
+    }

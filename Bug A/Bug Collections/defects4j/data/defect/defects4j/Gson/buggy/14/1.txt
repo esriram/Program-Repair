@@ -1,0 +1,5 @@
+  public static WildcardType supertypeOf(Type bound) {
+    Type[] lowerBounds;
+      lowerBounds = new Type[] { bound };
+    return new WildcardTypeImpl(new Type[] { Object.class }, lowerBounds);
+  }

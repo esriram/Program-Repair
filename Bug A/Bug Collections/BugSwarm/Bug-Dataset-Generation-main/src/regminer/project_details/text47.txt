@@ -1,0 +1,5 @@
+hub4j/github-api
+3
+org.kohsuke.github.GHPullRequestMockTest#shouldMockGHPullRequest
+org.kohsuke.github.GHPullRequestMockTest#shouldMockGHPullRequest
+org.kohsuke.github.GHPullRequestMockTest#shouldMockGHPullRequest

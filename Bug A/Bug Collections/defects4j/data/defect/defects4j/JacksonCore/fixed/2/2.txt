@@ -1,0 +1,18 @@
+    private final void _verifyRootSpace(int ch) throws IOException
+    {
+        // caller had pushed it back, before calling; reset
+        ++_inputPtr;
+        switch (ch) {
+        case ' ':
+        case '\t':
+            return;
+        case '\r':
+            _skipCR();
+            return;
+        case '\n':
+            ++_currInputRow;
+            _currInputRowStart = _inputPtr;
+            return;
+        }
+        _reportMissingRootWS(ch);
+    }

@@ -1,0 +1,3 @@
+kokorin/Jaffree
+1
+com.github.kokorin.jaffree.ffmpeg.FFmpegProgressTest#testFromStringWhichDoesnContainProgress

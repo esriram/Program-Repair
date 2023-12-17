@@ -1,0 +1,5 @@
+bioinform/varsim
+3
+com.bina.varsim.tools.evaluation.VCFCompareTest#missingGTSNPTest
+com.bina.varsim.util.VCFparserTest#vcfinfoTestDefaultBoolean
+com.bina.varsim.util.VCFparserTest#vcfinfoTestDefaultBoolean

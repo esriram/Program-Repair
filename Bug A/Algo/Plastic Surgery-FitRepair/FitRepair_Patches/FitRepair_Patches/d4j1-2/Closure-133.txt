@@ -1,0 +1,9 @@
+--- 
++++ 
+@@ -30,6 +30,7 @@
+    */
+   private String getRemainingJSDocLine() {
+     String result = stream.getRemainingJSDocLine();
++    unreadToken = NO_UNREAD_TOKEN;
+     return result;
+   }

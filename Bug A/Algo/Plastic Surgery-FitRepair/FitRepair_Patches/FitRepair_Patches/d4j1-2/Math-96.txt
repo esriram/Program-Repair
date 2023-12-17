@@ -1,0 +1,11 @@
+--- 
++++ 
+@@ -26,7 +26,7 @@
+                 if (rhs.isNaN()) {
+                     ret = this.isNaN();
+                 } else {
+-                    ret = (Double.doubleToRawLongBits(real) == Double.doubleToRawLongBits(rhs.getReal())) && (Double.doubleToRawLongBits(imaginary) == Double.doubleToRawLongBits(rhs.getImaginary())); 
++ret = (rhs.real == this.real) && rhs.imaginary == this.imaginary;
+                 }
+             } catch (ClassCastException ex) {
+                 // ignore exception

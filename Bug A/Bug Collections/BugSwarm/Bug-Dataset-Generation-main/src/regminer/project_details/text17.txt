@@ -1,0 +1,9 @@
+jdereg/java-util
+7
+com.cedarsoftware.util.TestDeepEquals#testInequivalentMaps
+com.cedarsoftware.ncube.TestNCubeFromJsonNestedException#testNCubeFromJsonWithNestedException
+com.cedarsoftware.util.TestDateUtilities#testXmlDates
+com.cedarsoftware.ncube.util.TestCdnClassLoader#testLocalResources
+com.cedarsoftware.ncube.TestNCubeManager#testRenameCubeWithSysClassPath
+com.cedarsoftware.ncube.TestJsonFormatter#testFormatter
+com.cedarsoftware.util.TestCaseInsensitiveMap#testKeySetRemoveAll

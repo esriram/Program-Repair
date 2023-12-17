@@ -1,0 +1,4 @@
+    void addOption(Option opt)
+    {
+        options.add(opt);
+    }

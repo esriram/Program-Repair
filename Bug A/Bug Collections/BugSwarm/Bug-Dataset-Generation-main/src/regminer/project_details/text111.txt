@@ -1,0 +1,5 @@
+logfellow/logstash-logback-encoder
+3
+net.logstash.logback.encoder.LogstashEncoderTest#nullMarkerIsIgnored
+net.logstash.logback.appender.LogstashSocketAppenderTest#testNoNullPointerWithNoCustomFields
+net.logstash.logback.appender.LogstashSocketAppenderTest#testNoNullPointerWithNoCustomFields

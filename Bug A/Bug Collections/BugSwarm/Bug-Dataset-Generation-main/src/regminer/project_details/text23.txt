@@ -1,0 +1,4 @@
+fasseg/exp4j
+2
+net.objecthunter.exp4j.expression.ExpressionBuilderBigDecimalTest#testExpression11
+de.congrace.exp4j.ExpressionBuilderTest#testUnaryMinusInParenthesisSpace

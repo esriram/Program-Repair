@@ -1,0 +1,1 @@
+Namespace(model_name='EleutherAI/gpt-neo-1.3B', batch_size=1, dataset='manybugs', chances=1, skip_val=True, folder='Results/test', weight=None, suffix=False, single_line=True, seed=420, language='c')

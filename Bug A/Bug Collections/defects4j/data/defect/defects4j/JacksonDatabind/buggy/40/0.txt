@@ -1,0 +1,3 @@
+        public final T getNullValue() {
+            return _nullValue;
+        }

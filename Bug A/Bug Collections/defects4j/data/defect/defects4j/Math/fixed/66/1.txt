@@ -1,0 +1,6 @@
+    protected double doOptimize()
+        throws MaxIterationsExceededException, FunctionEvaluationException {
+        return localMin(getGoalType() == GoalType.MINIMIZE,
+                        getMin(), getStartValue(), getMax(),
+                        getRelativeAccuracy(), getAbsoluteAccuracy());
+    }

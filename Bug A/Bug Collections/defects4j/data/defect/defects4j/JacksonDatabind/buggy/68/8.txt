@@ -1,0 +1,49 @@
+    public Object deserializeFromArray(JsonParser p, DeserializationContext ctxt) throws IOException
+    {
+        // note: can not call `_delegateDeserializer()` since order reversed here:
+        if (_arrayDelegateDeserializer != null) {
+            try {
+                Object bean = _valueInstantiator.createUsingArrayDelegate(ctxt, _arrayDelegateDeserializer.deserialize(p, ctxt));
+                if (_injectables != null) {
+                    injectValues(ctxt, bean);
+                }
+                return bean;
+            } catch (Exception e) {
+                return wrapInstantiationProblem(e, ctxt);
+            }
+        }
+        // fallback to non-array delegate
+        if (_delegateDeserializer != null) {
+            try {
+            Object bean = _valueInstantiator.createUsingArrayDelegate(ctxt,
+                    _delegateDeserializer.deserialize(p, ctxt));
+            if (_injectables != null) {
+                injectValues(ctxt, bean);
+            }
+            return bean;
+            } catch (Exception e) {
+                wrapInstantiationProblem(e, ctxt);
+                return null;
+            }
+        }
+        if (ctxt.isEnabled(DeserializationFeature.UNWRAP_SINGLE_VALUE_ARRAYS)) {
+            JsonToken t = p.nextToken();
+            if (t == JsonToken.END_ARRAY && ctxt.isEnabled(DeserializationFeature.ACCEPT_EMPTY_ARRAY_AS_NULL_OBJECT)) {
+                return null;
+            }
+            final Object value = deserialize(p, ctxt);
+            if (p.nextToken() != JsonToken.END_ARRAY) {
+                handleMissingEndArrayForSingle(p, ctxt);
+            }
+            return value;
+        }
+        if (ctxt.isEnabled(DeserializationFeature.ACCEPT_EMPTY_ARRAY_AS_NULL_OBJECT)) {
+            JsonToken t = p.nextToken();
+            if (t == JsonToken.END_ARRAY) {
+                return null;
+            }
+            return ctxt.handleUnexpectedToken(handledType(),
+                    JsonToken.START_ARRAY, p, null);
+        }
+        return ctxt.handleUnexpectedToken(handledType(), p);
+    }

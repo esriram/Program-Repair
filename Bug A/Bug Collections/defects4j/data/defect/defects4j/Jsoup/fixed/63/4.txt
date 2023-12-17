@@ -1,0 +1,4 @@
+    void advanceTransition(TokeniserState state) {
+        reader.advance();
+        this.state = state;
+    }

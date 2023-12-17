@@ -1,0 +1,8 @@
+    private boolean supportsCompressedSizeFor(final ZipArchiveEntry entry) {
+        return entry.getCompressedSize() != ArchiveEntry.SIZE_UNKNOWN
+            || entry.getMethod() == ZipEntry.DEFLATED
+            || entry.getMethod() == ZipMethod.ENHANCED_DEFLATED.getCode()
+            || (entry.getGeneralPurposeBit().usesDataDescriptor()
+                && allowStoredEntriesWithDataDescriptor
+                && entry.getMethod() == ZipEntry.STORED);
+    }

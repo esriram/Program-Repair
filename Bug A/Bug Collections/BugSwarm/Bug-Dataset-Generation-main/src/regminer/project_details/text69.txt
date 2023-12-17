@@ -1,0 +1,5 @@
+j256/ormlite-core
+3
+com.j256.ormlite.field.FieldTypeTest#testFieldSetNull
+com.j256.ormlite.field.FieldTypeTest#testForeignConfigured
+com.j256.ormlite.field.types.DateStringTypeTest#testDateString

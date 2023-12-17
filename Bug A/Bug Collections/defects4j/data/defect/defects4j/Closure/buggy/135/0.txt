@@ -1,0 +1,14 @@
+  private void replaceReferencesToThis(Node node, String name) {
+    if (NodeUtil.isFunction(node)) {
+      return;
+    }
+
+    for (Node child : node.children()) {
+      if (NodeUtil.isThis(child)) {
+        Node newName = Node.newString(Token.NAME, name);
+        node.replaceChild(child, newName);
+      } else {
+        replaceReferencesToThis(child, name);
+      }
+    }
+  }

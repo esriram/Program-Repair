@@ -1,0 +1,7 @@
+    Object writeReplace() {
+        // need to construct a fake instance to support serialization
+        if (_annotated != null) {
+            return this;
+        }
+        return new InnerClassProperty(this, new AnnotatedConstructor(null, _creator, null, null));
+    }

@@ -1,0 +1,28 @@
+compile spoon processor:
+javac -classpath spoon-core-10.2.0-beta-21-jar-with-dependencies.jar src/main/java/spoon/processors/CatchProcessor.java
+
+package into jar (navigate to /java)
+jar cf processors.jar spoon
+
+run (navigate to spoon-master):
+java -classpath src/main/java/catch-processor.jar:spoon-core-10.2.0-beta-21-jar-with-dependencies.jar spoon.Launcher -i ./test -p spoon.processors.CatchProcessor
+
+
+final run:
+java -classpath src/main/java/processors.jar:spoon-core-10.2.0-beta-21-jar-with-dependencies.jar spoon.Launcher -i ./test --processors spoon.processors.WhileProcessor:spoon.processors.ForProcessor:spoon.processors.IfProcessor:spoon.processors.SwitchProcessor:spoon.processors.ForEachProcessor
+
+
+Control Flow:
+
+Go to src/main/java
+jar cf controlflow.jar fr
+
+cd to spoon-master
+javac -classpath spoon-core-10.2.0-beta-21-jar-with-dependencies.jar:src/main/java/processors.jar:src/main/java/controlflow.jar:src/main/java/jgrapht-core-0.9.2.jar src/main/java/spoon/processors/ControlFlowProcessor.java
+
+cd  to src/main/java
+jar cf processors.jar spoon
+
+cd back to spoon-master
+java -classpath src/main/java/processors.jar:spoon-core-10.2.0-beta-21-jar-with-dependencies.jar:src/main/java/controlflow.jar:src/main/java/jgrapht-core-0.9.2.jar spoon.Launcher -i ./test2 -p spoon.processors.ControlFlowProcessor
+

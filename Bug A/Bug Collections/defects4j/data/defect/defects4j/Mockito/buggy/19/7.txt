@@ -1,0 +1,3 @@
+    public TypeBasedCandidateFilter(MockCandidateFilter next) {
+        this.next = next;
+    }

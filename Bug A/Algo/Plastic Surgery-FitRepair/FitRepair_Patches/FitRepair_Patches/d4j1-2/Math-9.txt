@@ -1,0 +1,11 @@
+--- 
++++ 
+@@ -21,7 +21,7 @@
+      * @return a new instance, with reversed direction
+      */
+     public Line revert() {
+-        final Line reverted = new Line(zero, zero.subtract(direction));
++final Line reverted = new Line(zero, zero.subtract(direction));        reverted.direction = direction.negate();
+         return reverted;
+     }
+ 

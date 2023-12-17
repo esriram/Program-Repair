@@ -1,0 +1,3 @@
+    private static boolean isWhitespace(final int b) {
+        return b == SPACE || b == TAB;
+    }

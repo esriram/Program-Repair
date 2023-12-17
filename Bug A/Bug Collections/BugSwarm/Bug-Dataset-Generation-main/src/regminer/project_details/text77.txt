@@ -1,0 +1,3 @@
+CodeStory/fluent-http
+1
+net.codestory.http.UriParserTest#dont_match_if_last_param_is_empty

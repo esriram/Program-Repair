@@ -1,0 +1,4 @@
+vietj/reactive-pg-client
+2
+io.reactiverse.pgclient.PgPoolTest#testAuthFailure
+io.reactiverse.pgclient.PgPoolTest#testConcurrentMultipleConnection

@@ -1,0 +1,3 @@
+    protected List<Node> ensureChildNodes() {
+        return EmptyNodes;
+    }

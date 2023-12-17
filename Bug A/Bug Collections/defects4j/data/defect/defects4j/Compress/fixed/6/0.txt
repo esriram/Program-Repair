@@ -1,0 +1,4 @@
+    public ZipArchiveEntry(String name) {
+        super(name);
+        setName(name);
+    }

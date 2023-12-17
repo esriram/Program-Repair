@@ -1,0 +1,6 @@
+  public Var getArgumentsVar() {
+    if (arguments == null) {
+      arguments = new Arguments(this);
+    }
+    return arguments;
+  }

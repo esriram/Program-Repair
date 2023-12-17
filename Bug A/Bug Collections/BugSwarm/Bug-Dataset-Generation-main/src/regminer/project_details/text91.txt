@@ -1,0 +1,4 @@
+apache/commons-beanutils
+2
+org.apache.commons.beanutils.bugs.Jira465TestCase#testListProperty
+org.apache.commons.beanutils.bugs.Jira458TestCase#checkConversionWithNullDefault

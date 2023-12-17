@@ -1,0 +1,7 @@
+    public void finish() throws IOException {
+        if(haveUnclosedEntry) {
+            throw new IOException("This archives contains unclosed entries.");
+        }
+        writeEOFRecord();
+        writeEOFRecord();
+    }

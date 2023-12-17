@@ -1,0 +1,3 @@
+    public String normalName() {
+        return normalName;
+    }

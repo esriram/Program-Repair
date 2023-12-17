@@ -1,0 +1,11 @@
+--- 
++++ 
+@@ -22,6 +22,8 @@
+                     start = ' ';                
+                 }
+             }
++ } else if (start >= end) {
++            throw new IllegalArgumentException("Invalid starting point: " + start + ", end: " + end);
+         }
+ 
+         char[] buffer = new char[count];

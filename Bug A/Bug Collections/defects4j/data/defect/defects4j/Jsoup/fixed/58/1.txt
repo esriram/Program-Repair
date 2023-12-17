@@ -1,0 +1,4 @@
+    public static List<Node> parseFragment(String fragmentHtml, Element context, String baseUri, ParseErrorList errorList) {
+        HtmlTreeBuilder treeBuilder = new HtmlTreeBuilder();
+        return treeBuilder.parseFragment(fragmentHtml, context, baseUri, errorList, treeBuilder.defaultSettings());
+    }

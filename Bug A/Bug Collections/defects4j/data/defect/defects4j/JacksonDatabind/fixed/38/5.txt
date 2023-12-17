@@ -1,0 +1,12 @@
+    private static JavaType _buildSuperClass(Class<?> superClass, TypeBindings b)
+    {
+        if (superClass == null) {
+            return null;
+        }
+        if (superClass == Object.class) {
+            return TypeFactory.unknownType();
+        }
+        JavaType superSuper = _buildSuperClass(superClass.getSuperclass(), b);
+        return new SimpleType(superClass, b,
+                superSuper, null, null, null, false);
+    }

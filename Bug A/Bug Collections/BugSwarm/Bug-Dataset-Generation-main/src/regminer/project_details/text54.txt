@@ -1,0 +1,7 @@
+INRIA/spoon
+5
+spoon.reflect.visitor.CtScannerTest#testScannerCallsAllProperties
+spoon.test.position.PositionTest#testPositionBuilderFailureIsCaugth
+spoon.test.ctClass.CtClassTest#testAllTypeReferencesToALocalTypeShouldNotStartWithNumber
+spoon.test.fieldaccesses.FieldAccessTest#testGetReference
+spoon.test.OutputTypeTest#testOutputTypeLoading

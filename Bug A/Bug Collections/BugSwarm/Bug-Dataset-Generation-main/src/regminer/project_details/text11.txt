@@ -1,0 +1,10 @@
+yegor256/cactoos
+8
+org.cactoos.map.MapEnvelopeTest#equalNotFailsOnNull
+org.cactoos.collection.CollectionEnvelopeTest#notEqualToNull
+org.cactoos.io.TeeInputStreamTest#leftInputUnclosed
+org.cactoos.io.TeeInputStreamTest#leftInputUnclosed
+org.cactoos.iterator.JoinedTest#callsNextDirectlyOnNonEmptyIterator
+org.cactoos.func.RepeatedFuncTest#repeatsNullsResults
+org.cactoos.func.RepeatedFuncTest#repeatsNullsResults
+org.cactoos.func.RepeatedFuncTest#doesntRepeatAny

@@ -1,0 +1,10 @@
+    private void processNonOptionToken(String value, boolean stopAtNonOption)
+    {
+        if (stopAtNonOption && (currentOption == null || !currentOption.hasArg()))
+        {
+            eatTheRest = true;
+            tokens.add("--");
+        }
+
+        tokens.add(value);
+    }

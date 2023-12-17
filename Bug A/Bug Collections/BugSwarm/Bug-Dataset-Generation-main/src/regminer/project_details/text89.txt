@@ -1,0 +1,4 @@
+influxdata/influxdb-java
+2
+org.influxdb.InfluxDBFactoryTest#shouldThrowIllegalArgumentWithInvalidUrl
+org.influxdb.InfluxDBFactoryTest#shouldThrowIllegalArgumentWithInvalidUrl

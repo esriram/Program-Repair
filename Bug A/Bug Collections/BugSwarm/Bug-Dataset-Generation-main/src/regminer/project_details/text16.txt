@@ -1,0 +1,7 @@
+Esri/geometry-api-java
+5
+com.esri.core.geometry.TestBuffer#testBufferPolyline
+com.esri.core.geometry.TestBuffer#testBufferPolyline
+com.esri.core.geometry.TestRelation#testDisjointCrash
+com.esri.core.geometry.TestConvexHull#testHullIssueGithub194
+com.esri.core.geometry.TestConvexHull#testHullIssueGithub194

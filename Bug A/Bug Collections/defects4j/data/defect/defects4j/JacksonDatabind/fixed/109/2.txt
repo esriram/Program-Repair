@@ -1,0 +1,3 @@
+    public static JsonSerializer<?> bigDecimalAsStringSerializer() {
+        return BigDecimalAsStringSerializer.BD_INSTANCE;
+    }

@@ -1,0 +1,4 @@
+zeromq/jeromq
+2
+org.zeromq.TestZMQ#testBindInprocSameAddress
+org.zeromq.TestZMQ#testBindInprocSameAddress

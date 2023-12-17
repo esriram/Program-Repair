@@ -1,0 +1,3 @@
+  public void setOutputCharset(String charsetName) {
+    this.outputCharset = charsetName;
+  }

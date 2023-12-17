@@ -1,0 +1,3 @@
+dynjs/dynjs
+1
+org.dynjs.runtime.java.JavaIntegrationTest#testGenericMapFactory

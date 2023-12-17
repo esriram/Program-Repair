@@ -1,0 +1,9 @@
+apache/commons-compress
+7
+org.apache.commons.compress.archivers.tar.TarArchiveInputStreamTest#stCompress554
+org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStreamTest#shouldThrowIOExceptionInsteadOfRuntimeExceptionCOMPRESS519
+org.apache.commons.compress.archivers.tar.TarArchiveInputStreamTest#survivesPaxHeaderWithNameEndingInSlash
+org.apache.commons.compress.archivers.tar.TarArchiveInputStreamTest#survivesBlankLinesInPaxHeader
+org.apache.commons.compress.DetectArchiverTestCase#testCOMPRESS335
+org.apache.commons.compress.archivers.tar.TarUtilsTest#testParseOctalInvalid
+org.apache.commons.compress.archivers.ArchiveStreamFactoryTest#aiffFilesAreNoTARs

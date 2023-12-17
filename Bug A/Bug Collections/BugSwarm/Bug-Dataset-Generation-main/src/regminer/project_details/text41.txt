@@ -1,0 +1,3 @@
+davidmoten/rxjava-jdbc
+1
+com.github.davidmoten.rx.jdbc.UtilTest#testAutoMapOfDoubleToBigInteger

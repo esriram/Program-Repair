@@ -1,0 +1,4 @@
+jeffdcamp/dbtools-query
+2
+com.jdc.db.jpa.query.JPAQueryBuilderTest#testApplyWithFilters
+com.jdc.db.jpa.query.JPAQueryBuilderTest#testApplyWithFilters

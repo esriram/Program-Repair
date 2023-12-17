@@ -1,0 +1,5 @@
+logic-ng/LogicNG
+3
+org.logicng.explanations.smus.SmusComputationTest#testSatisfiable
+org.logicng.transformations.FormulaFactoryImporterTest#testImplication
+org.logicng.solvers.sat.IncDecTest#testIncDec

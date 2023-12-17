@@ -1,0 +1,6 @@
+  public JsonWriter value(boolean value) throws IOException {
+    writeDeferredName();
+    beforeValue();
+    out.write(value ? "true" : "false");
+    return this;
+  }

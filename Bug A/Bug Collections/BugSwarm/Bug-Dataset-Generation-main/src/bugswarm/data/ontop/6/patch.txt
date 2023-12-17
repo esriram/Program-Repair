@@ -1,0 +1,40 @@
+From b1f2de252c2d547e3f851f9395ed94b975d40475 Mon Sep 17 00:00:00 2001
+From: Sarah Komla-Ebri <sarahkeb89@gmail.com>
+Date: Thu, 20 Aug 2015 18:33:04 +0200
+Subject: [PATCH] avoid problem with quotes, remove char from the string values
+
+---
+ .../krdb/obda/owlrefplatform/core/sql/SQLGenerator.java   | 8 +++++---
+ 1 file changed, 5 insertions(+), 3 deletions(-)
+
+diff --git a/reformulation-core/src/main/java/it/unibz/krdb/obda/owlrefplatform/core/sql/SQLGenerator.java b/reformulation-core/src/main/java/it/unibz/krdb/obda/owlrefplatform/core/sql/SQLGenerator.java
+index 4da0ed68ce3..e088099a195 100644
+--- a/reformulation-core/src/main/java/it/unibz/krdb/obda/owlrefplatform/core/sql/SQLGenerator.java
++++ b/reformulation-core/src/main/java/it/unibz/krdb/obda/owlrefplatform/core/sql/SQLGenerator.java
+@@ -1278,13 +1278,15 @@ private boolean isStringColType(Term term, QueryAliasIndex index) {
+ //
+ 			Collection<TableDefinition> tables = metadata.getTables();
+ 			for (TableDefinition tabledef: tables) {
+-				if (tabledef.getName().equals(table)) {
++				String tableName =trim(tabledef.getName());
++
++				if (tableName.equals(table)) {
+ 					Collection<Attribute> attr = tabledef.getAttributes();
+ 					for (Attribute a : attr) {
+ 						if (a.getName().equals(col)) {
+ 							switch (a.getType()) {
+ 								case Types.VARCHAR:
+-								case Types.CHAR:
++//								case Types.CHAR:
+ 								case Types.LONGNVARCHAR:
+ 								case Types.LONGVARCHAR:
+ 								case Types.NVARCHAR:
+@@ -1297,7 +1299,7 @@ private boolean isStringColType(Term term, QueryAliasIndex index) {
+ 					}
+ 				}
+ 			}
+-			return true; //TODO: this is a bugfix in the case a view is present (it is not a table) we treat it as a string character since we cannot now it's value
++//			return true; //TODO: this is a bugfix in the case a view is present (it is not a table) we treat it as a string character since we cannot know it's value
+ 		}
+ 		return false;
+ 	}

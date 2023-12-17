@@ -1,0 +1,12 @@
+--- 
++++ 
+@@ -22,7 +22,8 @@
+      */
+     public Week(Date time, TimeZone zone) {
+         // defer argument checking...
+-        this(time, RegularTimePeriod.DEFAULT_TIME_ZONE, Locale.getDefault());
++        this (time, zone, Locale.getDefault());  // think is the same thing as the week 
++          // for which is allowed in Java 1.0.1
+     }
+ 
+     /**

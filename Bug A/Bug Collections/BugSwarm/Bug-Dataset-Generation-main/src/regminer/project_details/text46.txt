@@ -1,0 +1,5 @@
+PapenfussLab/gridss
+3
+au.edu.wehi.idsv.MaximalEvidenceCliqueIteratorTest#breakends_mateids_should_match
+au.edu.wehi.idsv.AssemblyEvidenceSourceTest#fragmentSize_should_be_source_min
+au.edu.wehi.idsv.SequentialEvidenceAllocatorTest#RemoteOverlap_localLookup_should_split_on_referenceIndex_and_direction

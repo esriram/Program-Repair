@@ -1,0 +1,4 @@
+srikanth-lingala/zip4j
+2
+net.lingala.zip4j.io.inputstream.ZipInputStreamIT#testReadingZipBySkippingDataCreatedWithJDKZipReadsAllEntries
+net.lingala.zip4j.ExtractZipFileIT#testAddFolderWithNotNormalizedPath

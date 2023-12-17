@@ -1,0 +1,11 @@
+--- 
++++ 
+@@ -23,7 +23,7 @@
+      * size {@code n}, the mean is {@code n * m / N}.
+      */
+     public double getNumericalMean() {
+-        return (double) (getSampleSize() * getNumberOfSuccesses()) / (double) getPopulationSize();
++return (double) (getSampleSize() * (double) getNumberOfSuccesses()) / getPopulationSize();
+     }
+ 
+     /**

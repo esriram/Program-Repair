@@ -1,0 +1,7 @@
+    private void normalizeFunctionDeclaration(Node n) {
+      Preconditions.checkState(n.getType() == Token.FUNCTION);
+      if (!NodeUtil.isFunctionAnonymous(n)
+          && !NodeUtil.isHoistedFunctionDeclaration(n)) {
+        rewriteFunctionDeclaration(n);
+      }
+    }

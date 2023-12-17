@@ -1,0 +1,5 @@
+fabric8io/docker-maven-plugin
+3
+io.fabric8.maven.docker.assembly.DockerFileBuilderTest#testBuildLabelWithSpace
+io.fabric8.maven.docker.util.AuthConfigFactoryTest#testDockerLoginFallsBackToAuthWhenCredentialHelperDoesNotMatchDomain
+io.fabric8.maven.docker.assembly.DockerFileBuilderTest#testBuildLabelWithSpace

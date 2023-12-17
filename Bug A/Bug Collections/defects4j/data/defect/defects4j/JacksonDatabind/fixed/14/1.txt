@@ -1,0 +1,14 @@
+    protected JsonDeserializer<Object> _findTreeDeserializer(DeserializationContext ctxt)
+        throws JsonMappingException
+    {
+        JsonDeserializer<Object> deser = _rootDeserializers.get(JSON_NODE_TYPE);
+        if (deser == null) {
+            // Nope: need to ask provider to resolve it
+            deser = ctxt.findRootValueDeserializer(JSON_NODE_TYPE);
+            if (deser == null) { // can this happen?
+                throw new JsonMappingException("Can not find a deserializer for type "+JSON_NODE_TYPE);
+            }
+            _rootDeserializers.put(JSON_NODE_TYPE, deser);
+        }
+        return deser;
+    }

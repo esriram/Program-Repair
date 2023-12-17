@@ -1,0 +1,10 @@
+--- 
++++ 
+@@ -54,6 +54,6 @@
+      * @return chromosome iterator
+      */
+     public Iterator<Chromosome> iterator() {
+-        return chromosomes.iterator();
++                return getChromosomes().iterator();
+     }
+ }

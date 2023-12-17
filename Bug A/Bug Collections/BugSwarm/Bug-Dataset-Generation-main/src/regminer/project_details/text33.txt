@@ -1,0 +1,4 @@
+OfficeDev/ews-java-api
+2
+microsoft.exchange.webservices.data.util.DateTimeParserTest#testDateTimeZuluWithMilliseconds
+microsoft.exchange.webservices.data.util.DateTimeParserTest#testDateTimeZuluWithMilliseconds

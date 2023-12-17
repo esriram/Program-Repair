@@ -1,0 +1,3 @@
+addthis/stream-lib
+1
+javax.util.streamex.MoreCollectorsTest#testHeadTailParallel

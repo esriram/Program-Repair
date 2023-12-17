@@ -1,0 +1,3 @@
+    void addConstant(String newcode) {
+      add("0");
+    }

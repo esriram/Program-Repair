@@ -1,0 +1,11 @@
+mybatis/mybatis-3
+9
+org.apache.ibatis.type.TypeHandlerRegistryTest#shouldRegisterReplaceNullMap
+org.apache.ibatis.io.VFSTest#getInstanceShouldNotBeNullInMultiThreadEnv
+org.apache.ibatis.submitted.complex_column.ComplexColumnTest#testWithParamAttributes
+org.apache.ibatis.submitted.includes.IncludeTest#testIncludes
+org.apache.ibatis.submitted.includes.IncludeTest#testIncludes
+org.apache.ibatis.submitted.selectkey.SelectKeyTest#testSeleckKeyReturnsNoData
+org.apache.ibatis.submitted.includes.IncludeTest#testIncludes
+org.apache.ibatis.submitted.includes.IncludeTest#testIncludes
+org.apache.ibatis.submitted.selectkey.SelectKeyTest#testSeleckKeyReturnsNoData

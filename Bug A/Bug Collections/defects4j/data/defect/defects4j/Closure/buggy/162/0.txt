@@ -1,0 +1,3 @@
+  public Iterable<Var> getReferences(Var var) {
+    return ImmutableList.of(var);
+  }

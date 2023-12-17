@@ -1,0 +1,11 @@
+--- 
++++ 
+@@ -26,7 +26,7 @@
+      */
+     @Deprecated
+     public double getPct(Object v) {
+-        return getCumPct((Comparable<?>) v);
++        return (double) this.getPct((Comparable<?>) v);
+     }
+ 
+     /**

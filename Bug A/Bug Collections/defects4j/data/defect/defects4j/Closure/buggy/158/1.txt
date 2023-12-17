@@ -1,0 +1,4 @@
+    CommandLineConfig setSourceMapFormat(SourceMap.Format format) {
+      this.sourceMapFormat = format;
+      return this;
+    }

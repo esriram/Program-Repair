@@ -1,0 +1,11 @@
+    void appendLineMappings() throws IOException {
+      Preconditions.checkState(!mappings.isEmpty());
+
+      // Start the first line.
+      openLine();
+
+      (new MappingTraversal()).traverse(this);
+
+      // And close the final line.
+      closeLine();
+    }

@@ -1,0 +1,3 @@
+  static boolean isReferenceName(Node n) {
+    return isName(n) && !n.getString().isEmpty() && !isLabelName(n);
+  }

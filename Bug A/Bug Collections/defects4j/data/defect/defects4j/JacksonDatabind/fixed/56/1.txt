@@ -1,0 +1,10 @@
+        protected int _firstHyphenOrUnderscore(String str)
+        {
+            for (int i = 0, end = str.length(); i < end; ++i) {
+                char c = str.charAt(i);
+                if (c == '_' || c == '-') {
+                    return i;
+                }
+            }
+            return -1;
+        }

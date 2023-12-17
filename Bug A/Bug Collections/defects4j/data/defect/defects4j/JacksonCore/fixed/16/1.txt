@@ -1,0 +1,7 @@
+    protected JsonParserSequence(JsonParser[] parsers)
+    {
+        super(parsers[0]);
+        _suppressNextToken = delegate.hasCurrentToken();
+        _parsers = parsers;
+        _nextParser = 1;
+    }

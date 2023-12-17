@@ -1,0 +1,474 @@
+[
+  {
+    "bugId": "Bears-1",
+    "bugBranch": "FasterXML-jackson-databind-176912167-190405643"
+  },
+  {
+    "bugId": "Bears-2",
+    "bugBranch": "FasterXML-jackson-databind-190405643-195044059"
+  },
+  {
+    "bugId": "Bears-3",
+    "bugBranch": "FasterXML-jackson-databind-190406891-190505536"
+  },
+  {
+    "bugId": "Bears-4",
+    "bugBranch": "FasterXML-jackson-databind-195066764-195069327"
+  },
+  {
+    "bugId": "Bears-5",
+    "bugBranch": "FasterXML-jackson-databind-195430379-198387397"
+  },
+  {
+    "bugId": "Bears-6",
+    "bugBranch": "FasterXML-jackson-databind-195646489-195752461"
+  },
+  {
+    "bugId": "Bears-7",
+    "bugBranch": "FasterXML-jackson-databind-195752461-195777970"
+  },
+  {
+    "bugId": "Bears-8",
+    "bugBranch": "FasterXML-jackson-databind-203042777-203306015"
+  },
+  {
+    "bugId": "Bears-9",
+    "bugBranch": "FasterXML-jackson-databind-203649003-204682356"
+  },
+  {
+    "bugId": "Bears-11", 
+    "bugBranch": "FasterXML-jackson-databind-215036598-215111320-with-workaround"
+  },
+  {
+    "bugId": "Bears-12", 
+    "bugBranch": "FasterXML-jackson-databind-215111320-215799347-with-workaround"
+  },
+  {
+    "bugId": "Bears-14",
+    "bugBranch": "FasterXML-jackson-databind-221825856-221903238"
+  },
+  {
+    "bugId": "Bears-15",
+    "bugBranch": "FasterXML-jackson-databind-223024976-223291136"
+  },
+  {
+    "bugId": "Bears-16",
+    "bugBranch": "FasterXML-jackson-databind-226276279-226639126"
+  },
+  {
+    "bugId": "Bears-17",
+    "bugBranch": "FasterXML-jackson-databind-226654766-226666085"
+  },
+  {
+    "bugId": "Bears-18",
+    "bugBranch": "FasterXML-jackson-databind-226666085-226673064"
+  },
+  {
+    "bugId": "Bears-19",
+    "bugBranch": "FasterXML-jackson-databind-228025083-228873360"
+  },
+  {
+    "bugId": "Bears-20",
+    "bugBranch": "FasterXML-jackson-databind-233857275-234147085"
+  },
+  {
+    "bugId": "Bears-21",
+    "bugBranch": "FasterXML-jackson-databind-241044631-241063530"
+  },
+  {
+    "bugId": "Bears-22",
+    "bugBranch": "FasterXML-jackson-databind-241063530-241065840"
+  },
+  {
+    "bugId": "Bears-23",
+    "bugBranch": "FasterXML-jackson-databind-242268513-242687710"
+  },
+  {
+    "bugId": "Bears-24",
+    "bugBranch": "FasterXML-jackson-databind-243509258-243861380"
+  },
+  {
+    "bugId": "Bears-25",
+    "bugBranch": "FasterXML-jackson-databind-247621332-247674379"
+  },
+  {
+    "bugId": "Bears-26",
+    "bugBranch": "FasterXML-jackson-databind-318458719-318715551"
+  },
+  {
+    "bugId": "Bears-83",
+    "bugBranch": "INRIA-spoon-277315604-277340707"
+  },
+  {
+    "bugId": "Bears-98",
+    "bugBranch": "traccar-traccar-188473748-188474474"
+  },
+  {
+    "bugId": "Bears-99",
+    "bugBranch": "traccar-traccar-190843415-191103948"
+  },
+  {
+    "bugId": "Bears-100",
+    "bugBranch": "traccar-traccar-195128524-195455832"
+  },
+  {
+    "bugId": "Bears-101",
+    "bugBranch": "traccar-traccar-198464113-198488474"
+  },
+  {
+    "bugId": "Bears-102",
+    "bugBranch": "traccar-traccar-201008628-201013389"
+  },
+  {
+    "bugId": "Bears-103",
+    "bugBranch": "traccar-traccar-207561899-207563891"
+  },
+  {
+    "bugId": "Bears-104",
+    "bugBranch": "traccar-traccar-212058933-212061222"
+  },
+  {
+    "bugId": "Bears-105",
+    "bugBranch": "traccar-traccar-216100740-216167822"
+  },
+  {
+    "bugId": "Bears-106",
+    "bugBranch": "traccar-traccar-216189551-216602583"
+  },
+  {
+    "bugId": "Bears-107",
+    "bugBranch": "traccar-traccar-216602583-216605267"
+  },
+  {
+    "bugId": "Bears-108",
+    "bugBranch": "traccar-traccar-219945896-220224837"
+  },
+  {
+    "bugId": "Bears-109",
+    "bugBranch": "traccar-traccar-220525069-220735965"
+  },
+  {
+    "bugId": "Bears-110",
+    "bugBranch": "traccar-traccar-222468469-222479725"
+  },
+  {
+    "bugId": "Bears-111",
+    "bugBranch": "traccar-traccar-222528691-222667430"
+  },
+  {
+    "bugId": "Bears-112",
+    "bugBranch": "traccar-traccar-225874246-226678972"
+  },
+  {
+    "bugId": "Bears-113",
+    "bugBranch": "traccar-traccar-228965242-229298433"
+  },
+  {
+    "bugId": "Bears-114",
+    "bugBranch": "traccar-traccar-233864732-233868407"
+  },
+  {
+    "bugId": "Bears-115",
+    "bugBranch": "traccar-traccar-237845618-237846623"
+  },
+  {
+    "bugId": "Bears-116",
+    "bugBranch": "traccar-traccar-239191142-239340888"
+  },
+  {
+    "bugId": "Bears-117",
+    "bugBranch": "traccar-traccar-241384932-242095240"
+  },
+  {
+    "bugId": "Bears-118",
+    "bugBranch": "traccar-traccar-243199408-243229436"
+  },
+  {
+    "bugId": "Bears-119",
+    "bugBranch": "traccar-traccar-243640798-243870734"
+  },
+  {
+    "bugId": "Bears-120",
+    "bugBranch": "traccar-traccar-248584369-248666173"
+  },
+  {
+    "bugId": "Bears-121",
+    "bugBranch": "traccar-traccar-255051210-255052458"
+  },
+  {
+    "bugId": "Bears-122",
+    "bugBranch": "traccar-traccar-262940348-263330667"
+  },
+  {
+    "bugId": "Bears-123",
+    "bugBranch": "traccar-traccar-265439859-265542197"
+  },
+  {
+    "bugId": "Bears-124",
+    "bugBranch": "traccar-traccar-267146704-267366528"
+  },
+  {
+    "bugId": "Bears-125",
+    "bugBranch": "traccar-traccar-267371558-268530427"
+  },
+  {
+    "bugId": "Bears-126",
+    "bugBranch": "traccar-traccar-269449386-269490884"
+  },
+  {
+    "bugId": "Bears-127",
+    "bugBranch": "traccar-traccar-273118899-273136493"
+  },
+  {
+    "bugId": "Bears-128",
+    "bugBranch": "traccar-traccar-273236004-273269445"
+  },
+  {
+    "bugId": "Bears-129",
+    "bugBranch": "traccar-traccar-274558862-274871026"
+  },
+  {
+    "bugId": "Bears-130",
+    "bugBranch": "traccar-traccar-275432141-275689407"
+  },
+  {
+    "bugId": "Bears-131",
+    "bugBranch": "traccar-traccar-292295467-292405214"
+  },
+  {
+    "bugId": "Bears-132",
+    "bugBranch": "traccar-traccar-301176898-301185806"
+  },
+  {
+    "bugId": "Bears-133",
+    "bugBranch": "traccar-traccar-305623200-305713931"
+  },
+  {
+    "bugId": "Bears-134",
+    "bugBranch": "traccar-traccar-307668730-307760931"
+  },
+  {
+    "bugId": "Bears-135",
+    "bugBranch": "traccar-traccar-308288525-308872339"
+  },
+  {
+    "bugId": "Bears-136",
+    "bugBranch": "traccar-traccar-309459456-309718203"
+  },
+  {
+    "bugId": "Bears-137",
+    "bugBranch": "traccar-traccar-313257147-313260584"
+  },
+  {
+    "bugId": "Bears-138",
+    "bugBranch": "traccar-traccar-316227226-316639485"
+  },
+  {
+    "bugId": "Bears-139",
+    "bugBranch": "traccar-traccar-322427143-322428590"
+  },
+  {
+    "bugId": "Bears-140",
+    "bugBranch": "2018swecapstone-h2ms-356638992-356666847"
+  },
+  {
+    "bugId": "Bears-141",
+    "bugBranch": "2018swecapstone-h2ms-363210218-363627522"
+  },
+  {
+    "bugId": "Bears-142",
+    "bugBranch": "Activiti-Activiti-357660134-359342518"
+  },
+  {
+    "bugId": "Bears-143",
+    "bugBranch": "2018swecapstone-h2ms-369561147-369563262"
+  },
+  {
+    "bugId": "Bears-144",
+    "bugBranch": "aicis-fresco-330883035-330923179"
+  },
+  {
+    "bugId": "Bears-146",
+    "bugBranch": "aicis-fresco-363993941-363994940"
+  },
+  {
+    "bugId": "Bears-149",
+    "bugBranch": "apache-incubator-dubbo-329355311-329773929"
+  },
+  {
+    "bugId": "Bears-150",
+    "bugBranch": "apache-incubator-dubbo-347256120-347634018"
+  },
+  {
+    "bugId": "Bears-152",
+    "bugBranch": "apache-incubator-dubbo-370383941-370422750"
+  },
+  {
+    "bugId": "Bears-153",
+    "bugBranch": "apache-incubator-servicecomb-java-chassis-330826674-331080091"
+  },
+  {
+    "bugId": "Bears-154",
+    "bugBranch": "apache-incubator-servicecomb-java-chassis-371353019-371886679"
+  },
+  {
+    "bugId": "Bears-156",
+    "bugBranch": "Blazebit-blaze-persistence-351937208-352045689"
+  },
+  {
+    "bugId": "Bears-158",
+    "bugBranch": "cpesch-RouteConverter-331125693-331749933"
+  },
+  {
+    "bugId": "Bears-159",
+    "bugBranch": "debezium-debezium-324021438-324040188"
+  },
+  {
+    "bugId": "Bears-160",
+    "bugBranch": "debezium-debezium-324040188-324047191"
+  },
+  {
+    "bugId": "Bears-161",
+    "bugBranch": "debezium-debezium-325431120-326310450"
+  },
+  {
+    "bugId": "Bears-164",
+    "bugBranch": "debezium-debezium-356786658-357274631"
+  },
+  {
+    "bugId": "Bears-166",
+    "bugBranch": "EnMasseProject-enmasse-344863667-344945686"
+  },
+  {
+    "bugId": "Bears-168",
+    "bugBranch": "EnMasseProject-enmasse-357424637-357457887"
+  },
+  {
+    "bugId": "Bears-169",
+    "bugBranch": "linkedin-pinot-342188288-342446553"
+  },
+  {
+    "bugId": "Bears-180",
+    "bugBranch": "spring-cloud-spring-cloud-gcp-330973656-330980388"
+  },
+  {
+    "bugId": "Bears-181",
+    "bugBranch": "spring-cloud-spring-cloud-gcp-353059531-353471273"
+  },
+  {
+    "bugId": "Bears-189",
+    "bugBranch": "SzFMV2018-Tavasz-AutomatedCar-367688128-367699437"
+  },
+  {
+    "bugId": "Bears-190",
+    "bugBranch": "thelastpickle-cassandra-reaper-324455111-327555133"
+  },
+  {
+    "bugId": "Bears-191",
+    "bugBranch": "thelastpickle-cassandra-reaper-364710673-365484062"
+  },
+  {
+    "bugId": "Bears-192",
+    "bugBranch": "thelastpickle-cassandra-reaper-365484062-365554427"
+  },
+  {
+    "bugId": "Bears-194",
+    "bugBranch": "albfernandez-GDS-PMD-Security-Rules-451155169-455669767"
+  },
+  {
+    "bugId": "Bears-197",
+    "bugBranch": "apereo-java-cas-client-408206584-439486928"
+  },
+  {
+    "bugId": "Bears-198",
+    "bugBranch": "aws-aws-encryption-sdk-java-441438164-441901187"
+  },
+  {
+    "bugId": "Bears-201",
+    "bugBranch": "brettwooldridge-HikariCP-446097106-446106182"
+  },
+  {
+    "bugId": "Bears-202",
+    "bugBranch": "classgraph-classgraph-448207270-449613955"
+  },
+  {
+    "bugId": "Bears-203",
+    "bugBranch": "cpesch-RouteConverter-432166807-432169636"
+  },
+  {
+    "bugId": "Bears-204",
+    "bugBranch": "CSU-CS414-WareWolves-cs414-f18-001-WareWolves-452444119-454548119"
+  },
+  {
+    "bugId": "Bears-209",
+    "bugBranch": "DmitriiSerikov-money-transfer-service-446104441-446106577"
+  },
+  {
+    "bugId": "Bears-211",
+    "bugBranch": "FasterXML-jackson-dataformats-binary-461131167-461139756"
+  },
+  {
+    "bugId": "Bears-221",
+    "bugBranch": "jenkinsci-ansicolor-plugin-440438437-449394834"
+  },
+  {
+    "bugId": "Bears-222",
+    "bugBranch": "jgrapht-jgrapht-443997242-444189432"
+  },
+  {
+    "bugId": "Bears-225",
+    "bugBranch": "lettuce-io-lettuce-core-438538449-438808943"
+  },
+  {
+    "bugId": "Bears-226",
+    "bugBranch": "milaboratory-milib-444855015-444858326"
+  },
+  {
+    "bugId": "Bears-227",
+    "bugBranch": "OpenFeign-feign-454179734-454278346"
+  },
+  {
+    "bugId": "Bears-228",
+    "bugBranch": "openmrs-openmrs-module-htmlformentry-452596787-452623087"
+  },
+  {
+    "bugId": "Bears-229",
+    "bugBranch": "openmrs-openmrs-module-webservices.rest-455565885-458312291"
+  },
+  {
+    "bugId": "Bears-230",
+    "bugBranch": "opentracing-contrib-java-p6spy-390188323-431527545"
+  },
+  {
+    "bugId": "Bears-232",
+    "bugBranch": "paritytrading-foundation-364820616-448899327"
+  },
+  {
+    "bugId": "Bears-234",
+    "bugBranch": "rafonsecad-cash-count-435955189-435958219"
+  },
+  {
+    "bugId": "Bears-235",
+    "bugBranch": "rafonsecad-cash-count-435958219-435967865"
+  },
+  {
+    "bugId": "Bears-238",
+    "bugBranch": "rkonovalov-jsonignore-442009574-442015798"
+  },
+  {
+    "bugId": "Bears-241",
+    "bugBranch": "societe-generale-ci-droid-tasks-consumer-420388707-430936160"
+  },
+  {
+    "bugId": "Bears-242",
+    "bugBranch": "SonarOpenCommunity-sonar-cxx-437974912-438070185"
+  },
+  {
+    "bugId": "Bears-245",
+    "bugBranch": "square-javapoet-418963407-436938143"
+  },
+  {
+    "bugId": "Bears-246",
+    "bugBranch": "thelinmichael-spotify-web-api-java-441742384-442933713"
+  }
+]

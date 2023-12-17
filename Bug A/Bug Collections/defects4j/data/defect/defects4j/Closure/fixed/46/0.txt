@@ -1,0 +1,13 @@
+  boolean defineProperty(String propertyName, JSType type,
+      boolean inferred, Node propertyNode) {
+    if (isFrozen) {
+      return false;
+    }
+
+    if (!inferred) {
+      properties.put(propertyName, type);
+    }
+
+    return super.defineProperty(propertyName, type, inferred,
+        propertyNode);
+  }

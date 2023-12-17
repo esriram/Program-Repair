@@ -1,0 +1,4 @@
+  protected List<JSSourceFile> createExterns() throws FlagUsageException,
+      IOException {
+    return createExternInputs(config.externs);
+  }

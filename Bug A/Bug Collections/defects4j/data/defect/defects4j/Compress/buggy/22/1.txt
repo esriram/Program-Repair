@@ -1,0 +1,8 @@
+    public BZip2CompressorInputStream(final InputStream in, final boolean decompressConcatenated) throws IOException {
+        this.in = in;
+        this.decompressConcatenated = decompressConcatenated;
+
+        init(true);
+        initBlock();
+        setupBlock();
+    }

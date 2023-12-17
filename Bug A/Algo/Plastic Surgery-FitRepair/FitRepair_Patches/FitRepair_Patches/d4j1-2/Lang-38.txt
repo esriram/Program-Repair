@@ -1,0 +1,10 @@
+--- 
++++ 
+@@ -25,6 +25,7 @@
+      */
+     public StringBuffer format(Calendar calendar, StringBuffer buf) {
+         if (mTimeZoneForced) {
++            Date tz = calendar.getTime();
+             calendar = (Calendar) calendar.clone();
+             calendar.setTimeZone(mTimeZone);
+         }

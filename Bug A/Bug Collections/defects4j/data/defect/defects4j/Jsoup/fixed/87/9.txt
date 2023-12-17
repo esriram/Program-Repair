@@ -1,0 +1,5 @@
+    void generateImpliedEndTags(String excludeTag) {
+        while ((excludeTag != null && !currentElement().normalName().equals(excludeTag)) &&
+                inSorted(currentElement().normalName(), TagSearchEndTags))
+            pop();
+    }

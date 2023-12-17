@@ -1,0 +1,5 @@
+    public synchronized String getPrefix(String namespaceURI) {
+        String prefix = getExternallyRegisteredPrefix(namespaceURI);
+        return prefix == null && pointer != null ? getPrefix(pointer,
+                namespaceURI) : prefix;
+    }

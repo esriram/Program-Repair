@@ -1,0 +1,5 @@
+lets-blade/blade
+3
+com.blade.mvc.handler.RequestInvokerTest#testRequestHandlerWebHook
+com.blade.mvc.ResponseTest#testJson
+com.blade.mvc.ui.RestResponseTest#testRestResponse

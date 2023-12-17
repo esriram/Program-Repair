@@ -1,0 +1,3 @@
+    public String getWholeDeclaration() {
+        return attributes.html().trim(); // attr html starts with a " "
+    }

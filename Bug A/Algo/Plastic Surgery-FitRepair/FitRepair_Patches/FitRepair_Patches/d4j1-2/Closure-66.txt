@@ -1,0 +1,11 @@
+--- 
++++ 
+@@ -28,6 +28,8 @@
+         // Object literal keys are handled with OBJECTLIT
+         if (!NodeUtil.isObjectLitKey(n, n.getParent())) {
+           ensureTyped(t, n, STRING_TYPE);
++        } else {
++          typeable = false;
+           // Object literal keys are not typeable
+         }
+         break;

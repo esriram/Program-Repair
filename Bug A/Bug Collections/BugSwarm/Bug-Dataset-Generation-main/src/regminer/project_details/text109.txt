@@ -1,0 +1,10 @@
+lemire/javaewah
+8
+com.googlecode.javaewah.EWAHCompressedBitmapTest#issue77
+com.googlecode.javaewah.EWAHCompressedBitmapTest#issue77
+com.googlecode.javaewah.EWAHCompressedBitmapTest#issue74
+com.googlecode.javaewah.EWAHCompressedBitmapTest#issue70
+com.googlecode.javaewah.EWAHCompressedBitmapTest#issue70
+com.googlecode.javaewah.EWAHCompressedBitmapTest#issue68
+com.googlecode.javaewah.EWAHCompressedBitmapTest#issue68
+com.googlecode.javaewah.EWAHCompressedBitmapTest#testSizeInBitsWithAndNot

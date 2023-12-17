@@ -1,0 +1,3 @@
+    public void writeRawValue(String text) throws IOException {
+        _append(JsonToken.VALUE_EMBEDDED_OBJECT, new RawValue(text));
+    }

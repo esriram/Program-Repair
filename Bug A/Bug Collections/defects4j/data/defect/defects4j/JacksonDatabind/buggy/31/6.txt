@@ -1,0 +1,7 @@
+    public void writeNumber(BigInteger v) throws IOException {
+        if (v == null) {
+            writeNull();
+        } else {
+            _append(JsonToken.VALUE_NUMBER_INT, v);
+        }
+    }

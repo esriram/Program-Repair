@@ -1,0 +1,6 @@
+    protected JsonSerializer<Object> _findSerializer(Object value, SerializerProvider serializers)
+        throws JsonMappingException
+    {
+        // NOTE: will NOT call contextualization
+        return serializers.findValueSerializer(value.getClass());
+    }

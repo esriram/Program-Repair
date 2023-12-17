@@ -1,0 +1,12 @@
+--- 
++++ 
+@@ -16,6 +16,9 @@
+             throw new DimensionMismatchException(len, b.length);
+         }
+ 
++        if (len == 1) {
++            return a[0] * b[0];
++        }
+             // Revert to scalar multiplication.
+ 
+         final double[] prodHigh = new double[len];

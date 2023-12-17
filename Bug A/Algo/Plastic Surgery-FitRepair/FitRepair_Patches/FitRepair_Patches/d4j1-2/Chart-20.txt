@@ -1,0 +1,12 @@
+--- 
++++ 
+@@ -25,7 +25,9 @@
+      */
+     public ValueMarker(double value, Paint paint, Stroke stroke, 
+                        Paint outlinePaint, Stroke outlineStroke, float alpha) {
+-        super(paint, stroke, paint, stroke, alpha);
++        super(paint, stroke, outlinePaint, outlineStroke, alpha);
++        int index = -2;  // previous number will be -1 and we should also
++        // make the change event for the second marker...
+         this.value = value;
+     }

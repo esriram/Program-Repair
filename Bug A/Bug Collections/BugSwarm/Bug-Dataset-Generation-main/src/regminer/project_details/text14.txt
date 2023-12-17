@@ -1,0 +1,4 @@
+codehaus/jettison
+2
+org.codehaus.jettison.json.JSONObjectTest#testMissingIsNull
+org.codehaus.jettison.mapped.MappedXMLStreamReaderTest#testNonStringAttributes

@@ -1,0 +1,8 @@
+decorators-squad/eo-yaml
+6
+com.amihaiemil.eoyaml.extensions.MergedYamlMappingTest#mergesByOverridingInnerComment
+com.amihaiemil.eoyaml.ReadLiteralBlockScalarTest#handlesTrailingSpaces
+com.amihaiemil.eoyaml.FirstCommentFoundTest#noFirstComment
+com.amihaiemil.eoyaml.ReadYamlMappingTest#returnsValueOfStringKeys
+com.amihaiemil.eoyaml.ReadYamlMappingTest#returnsValueOfStringKeys
+com.amihaiemil.eoyaml.RtYamlInputTest#readsEscapedScalarsFromSequence

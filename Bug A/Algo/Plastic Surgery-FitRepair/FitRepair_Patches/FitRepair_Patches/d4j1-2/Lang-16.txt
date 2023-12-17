@@ -1,0 +1,10 @@
+--- 
++++ 
+@@ -20,6 +20,7 @@
+             // a wrong value.
+             return null;
+         }
++        str = str.toLowerCase();
+         if (str.startsWith("0x") || str.startsWith("-0x")) {
+             return createInteger(str);
+         }   

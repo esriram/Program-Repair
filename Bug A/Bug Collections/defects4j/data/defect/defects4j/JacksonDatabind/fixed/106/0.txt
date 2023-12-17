@@ -1,0 +1,7 @@
+    public int getIntValue() throws IOException {
+        final NumericNode node = (NumericNode) currentNumericNode();
+        if (!node.canConvertToInt()) {
+            reportOverflowInt();
+        }
+        return node.intValue();
+    }

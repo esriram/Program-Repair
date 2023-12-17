@@ -1,0 +1,8 @@
+  private void fillEmptyModules(JSModule[] modules) {
+    for (int i = 1; i < modules.length; i ++) {
+      JSModule module = modules[i];
+      if (module.getInputs().isEmpty()) {
+        module.add(JSSourceFile.fromCode("[" + module.getName() + "]", ""));
+      }
+    }
+  }

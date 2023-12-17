@@ -1,0 +1,5 @@
+jahlborn/jackcess
+3
+com.healthmarketscience.jackcess.query.QueryTest#testReadQueries
+com.healthmarketscience.jackcess.DatabaseTest#testToString
+com.healthmarketscience.jackcess.DatabaseTest#testManyMemos

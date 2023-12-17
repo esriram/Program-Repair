@@ -1,0 +1,5 @@
+amaembo/streamex
+3
+com.clearspring.analytics.stream.cardinality.TestHyperLogLog#testMergeWithRegisterSet
+com.clearspring.analytics.stream.cardinality.TestHyperLogLog#testMergeWithRegisterSet
+com.clearspring.analytics.stream.cardinality.TestHyperLogLogPlus#testSerializationWithNewSortMethod

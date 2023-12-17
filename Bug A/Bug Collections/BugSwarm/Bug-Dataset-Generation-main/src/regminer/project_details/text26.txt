@@ -1,0 +1,9 @@
+mikera/vectorz
+7
+mikera.matrixx.TestMatrix#testSet
+mikera.matrixx.impl.TestSparseRowMatrix#testMatrixConvert
+mikera.matrixx.TestMisc#testRotateEquals
+mikera.matrixx.algo.TestInverses#testDiaginalInverse
+mikera.arrayz.TestBigSparse#testBigMultiply2
+mikera.matrixx.impl.TestDiagonalMatrix#testOrthogonal
+mikera.matrixx.impl.TestZeroMatrix#testEquals

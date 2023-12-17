@@ -1,0 +1,5 @@
+jeffheaton/encog-java-core
+3
+org.encog.persist.TestPersistLargeHopfield#testPersistEG
+org.encog.persist.TestPersistPopulation#testPersistSerial
+org.encog.persist.TestPersistPopulationNPE#testSaveRead

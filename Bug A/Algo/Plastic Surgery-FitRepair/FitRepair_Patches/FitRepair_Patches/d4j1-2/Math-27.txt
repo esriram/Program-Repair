@@ -1,0 +1,11 @@
+--- 
++++ 
+@@ -21,7 +21,7 @@
+      * @return the fraction percentage as a <tt>double</tt>.
+      */
+     public double percentageValue() {
+-        return multiply(100).doubleValue();
++        return this.doubleValue() * 100;
+     }
+ 
+     /**

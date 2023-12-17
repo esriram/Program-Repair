@@ -1,0 +1,10 @@
+--- 
++++ 
+@@ -34,7 +34,7 @@
+         _classSignature(_class, sb, false);
+         sb.append('<');
+         sb = _referencedType.getGenericSignature(sb);
+-        sb.append(';');
++        sb.append('>').append(';');
+         return sb;
+     }

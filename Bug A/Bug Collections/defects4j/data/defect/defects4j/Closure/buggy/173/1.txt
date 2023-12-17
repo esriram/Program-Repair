@@ -1,0 +1,40 @@
+  public Node optimizeSubtree(Node node) {
+    switch(node.getType()) {
+      case Token.TRUE:
+      case Token.FALSE:
+        return reduceTrueFalse(node);
+
+      case Token.NEW:
+        node = tryFoldStandardConstructors(node);
+        if (!node.isCall()) {
+          return node;
+        }
+        // Fall through on purpose because tryFoldStandardConstructors() may
+        // convert a NEW node into a CALL node
+      case Token.CALL:
+        Node result =  tryFoldLiteralConstructor(node);
+        if (result == node) {
+          result = tryFoldSimpleFunctionCall(node);
+          if (result == node) {
+            result = tryFoldImmediateCallToBoundFunction(node);
+          }
+        }
+        return result;
+
+      case Token.RETURN:
+        return tryReduceReturn(node);
+
+      case Token.COMMA:
+        return trySplitComma(node);
+
+      case Token.NAME:
+        return tryReplaceUndefined(node);
+
+      case Token.ARRAYLIT:
+        return tryMinimizeArrayLiteral(node);
+
+
+      default:
+        return node; //Nothing changed
+    }
+  }

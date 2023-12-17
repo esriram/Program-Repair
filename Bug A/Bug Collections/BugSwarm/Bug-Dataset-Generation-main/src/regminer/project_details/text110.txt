@@ -1,0 +1,8 @@
+bguerout/jongo
+6
+org.jongo.query.BsonQueryFactoryTest#shouldBindKeyParameterEvenIfQuotedAndTokenIsNotSingleChar
+org.jongo.query.BsonQueryFactoryTest#shouldBindKeyParameterEvenIfQuotedAndTokenIsNotSingleChar
+org.jongo.query.BsonQueryFactoryTest#shouldBindParameterWithCustomLongToken
+org.jongo.query.BsonQueryFactoryTest#shouldCreateSimpleQuery
+org.jongo.PolymorphismTest#canHandleInheritanceWithALongText
+org.jongo.marshall.ParameterQueryBindingTest#canBindPrimitiveArrayParameter

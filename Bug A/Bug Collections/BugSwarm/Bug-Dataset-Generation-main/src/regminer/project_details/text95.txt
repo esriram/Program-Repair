@@ -1,0 +1,3 @@
+jenkinsci/junit-plugin
+1
+hudson.tasks.junit.CaseResultTest#emptyName

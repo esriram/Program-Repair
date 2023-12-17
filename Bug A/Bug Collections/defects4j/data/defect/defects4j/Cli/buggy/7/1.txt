@@ -1,0 +1,8 @@
+    public PatternBuilder(
+        final GroupBuilder gbuilder,
+        final DefaultOptionBuilder obuilder,
+        final ArgumentBuilder abuilder) {
+        this.gbuilder = gbuilder;
+        this.obuilder = obuilder;
+        this.abuilder = abuilder;
+    }

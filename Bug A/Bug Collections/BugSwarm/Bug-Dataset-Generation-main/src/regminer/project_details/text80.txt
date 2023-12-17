@@ -1,0 +1,4 @@
+vert-x3/vertx-codegen
+2
+io.vertx.test.codegen.GeneratorTest#testInterfaceExtendingAsyncResultHandler
+io.vertx.test.codegen.OptionsTest#testOptionsWithNoFactoryMethod

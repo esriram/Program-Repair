@@ -1,0 +1,15 @@
+        public ExternalTypeHandler build(BeanPropertyMap otherProps) {
+            // 21-Jun-2016, tatu: as per [databind#999], may need to link type id property also
+            final int len = _properties.size();
+            ExtTypedProperty[] extProps = new ExtTypedProperty[len];
+            for (int i = 0; i < len; ++i) {
+                ExtTypedProperty extProp = _properties.get(i);
+                String typePropId = extProp.getTypePropertyName();
+                SettableBeanProperty typeProp = otherProps.find(typePropId);
+                if (typeProp != null) {
+                    extProp.linkTypeProperty(typeProp);
+                }
+                extProps[i] = extProp;
+            }
+            return new ExternalTypeHandler(extProps, _nameToPropertyIndex, null, null);
+        }
