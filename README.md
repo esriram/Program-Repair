@@ -1,6 +1,9 @@
 # Program-Repair
 
-Project Structure - Bug A/Algo/Repair Models - Change datasets for each repair model to test performance.
+Project Structure
+
+Bug A/Algo/Repair Models - Change datasets for each repair model to test performance.
+
 Bug A/Bug Collections/Datasets - Standard Bug Datasets that models are tested upon.
 
 
