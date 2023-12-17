@@ -14,8 +14,9 @@ For example, consider this example bug with BugSwarm Dataset,
 (bugswarm\data\gwtbootstrap3\2\fail\gwtbootstrap3\src\main\java\org\gwtbootstrap3\client\ui\InputToggleButtonGwt.java)
 (bugswarm\data\gwtbootstrap3\2\fail\gwtbootstrap3\src\main\java\org\gwtbootstrap3\client\ui\RadioButtonGwt.java)
 
-The problem with the above code in CheckBoxButtonGwt.java is that, 
-The import statement of import org.semanticweb.owlapi.reasoner.InconsistentOntologyException; is missing. These models are not able to fix such bugs that require knowledge of cross-file reference in a project.
+The problem with the above code in CheckBoxButtonGwt.java is that, the import statement of 
+
+import org.semanticweb.owlapi.reasoner.InconsistentOntologyException; is missing. These models are not able to fix such bugs that require knowledge of cross-file reference in a project.
 
 Another example from RegMiner, (codehaus_jettison/1/ric/src/main/java/org/codehaus/jettison/mapped/Configuration.java), the recommended fix is the addition of data variable 'ignoreEmptyArrayValues' and a getter and setter methods.
 
