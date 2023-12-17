@@ -13,11 +13,16 @@ The import statement of import org.semanticweb.owlapi.reasoner.InconsistentOntol
 Another example from RegMiner, (codehaus_jettison/1/ric/src/main/java/org/codehaus/jettison/mapped/Configuration.java), the recommended fix is the addition of data variable 'ignoreEmptyArrayValues' and a getter and setter methods.
 
 > private boolean ignoreEmptyArrayValues;
+> 
 > public boolean isIgnoreEmptyArrayValues() {
+> 
 >        return ignoreEmptyArrayValues;
+>
 > }
+>
 > public void setIgnoreEmptyArrayValues(boolean ignoreEmptyArrayValues) {
->        this.ignoreEmptyArrayValues = ignoreEmptyArrayValues;
+>
+>       this.ignoreEmptyArrayValues = ignoreEmptyArrayValues;
 > }
 
 However, this requires knowledge from files that use this class to understand that a data variable is missing. These models are not equipped for these.
